@@ -1,0 +1,17 @@
+{
+  "id": "bg-from-zero",
+  "units": [
+    { "dir": "u01-cyrillic-1", "number": 1, "status": "ready", "title": { "en": "Cyrillic I: Familiar faces", "he": "קירילית א׳: פרצופים מוכרים" } },
+    { "dir": "u02-cyrillic-2", "number": 2, "status": "ready", "title": { "en": "Cyrillic II: False friends & new letters", "he": "קירילית ב׳: חברים מטעים ואותיות חדשות" } },
+    { "dir": "u03-greetings", "number": 3, "status": "ready", "title": { "en": "Greetings & basic phrases", "he": "ברכות וביטויים בסיסיים" } },
+    { "dir": "u04-introductions", "number": 4, "status": "ready", "title": { "en": "Introductions", "he": "היכרות" } },
+    { "dir": "u05-nouns-article", "number": 5, "status": "planned", "title": { "en": "Nouns, gender & the definite article", "he": "שמות עצם, מין ויידוע" } },
+    { "dir": "u06-present-tense", "number": 6, "status": "planned", "title": { "en": "Present tense: съм and common verbs", "he": "הווה: съм ופעלים נפוצים" } },
+    { "dir": "u07-numbers", "number": 7, "status": "planned", "title": { "en": "Numbers, prices & time", "he": "מספרים, מחירים ושעות" } },
+    { "dir": "u08-cafe", "number": 8, "status": "planned", "title": { "en": "Food & ordering at a café", "he": "אוכל והזמנה בבית קפה" } },
+    { "dir": "u09-family", "number": 9, "status": "planned", "title": { "en": "Family & adjective agreement", "he": "משפחה והתאמת שמות תואר" } },
+    { "dir": "u10-questions", "number": 10, "status": "planned", "title": { "en": "Questions & negation", "he": "שאלות ושלילה" } },
+    { "dir": "u11-directions", "number": 11, "status": "planned", "title": { "en": "Directions & transport", "he": "הוראות דרך ותחבורה" } },
+    { "dir": "u12-past-tense", "number": 12, "status": "planned", "title": { "en": "Past tense basics & daily routine", "he": "יסודות העבר ושגרת יום" } }
+  ]
+}

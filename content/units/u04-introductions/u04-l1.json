@@ -1,0 +1,37 @@
+{
+  "id": "u04-l1",
+  "title": { "en": "I am…", "he": "אני…" },
+  "tips": ["tip.to-be"],
+  "newItems": ["u4.az", "u4.ti", "u4.az-sam", "u4.ti-si", "u4.az-sam-maria"],
+  "exercises": [
+    { "type": "mc", "item": "u4.az", "dir": "toL1" },
+    { "type": "mc", "item": "u4.ti", "dir": "toL1" },
+    { "type": "listenPick", "item": "u4.az-sam", "options": ["u4.az-sam", "u4.ti-si", "u4.az"] },
+    { "type": "mc", "item": "u4.ti-si", "dir": "toL1" },
+    { "type": "match", "items": ["u4.az", "u4.ti", "u4.az-sam", "u4.ti-si"] },
+    { "type": "wordBank", "item": "u4.az-sam-maria", "dir": "toBg", "distractors": { "bg": ["си", "ти"] } },
+    {
+      "type": "fillBlank", "before": "Аз ", "after": " Мари́я.", "answer": "съм",
+      "options": ["съм", "си"],
+      "translation": { "en": "I am Maria.", "he": "אני מריה." },
+      "explain": {
+        "en": "With аз (I) the verb is съм. It can't be left out, even though English speakers sometimes want to.",
+        "he": "עם аз (אני) הפועל הוא съм. בעברית אומרים „אני מריה“ בלי פועל — בבולגרית חייבים אותו."
+      }
+    },
+    { "type": "translate", "item": "u4.az-sam-maria", "dir": "toL1" },
+    { "type": "listenType", "item": "u4.az" },
+    {
+      "type": "fillBlank", "before": "Ти ", "after": " Ива́н.", "answer": "си",
+      "options": ["си", "съм"],
+      "translation": { "en": "You are Ivan.", "he": "אתה איוון." },
+      "explain": {
+        "en": "With ти (you) the verb is си. съм only goes with аз.",
+        "he": "עם ти (אתה/את) הפועל הוא си. съм הולך רק עם аз."
+      }
+    },
+    { "type": "translate", "item": "u4.az-sam", "dir": "toBg" },
+    { "type": "wordBank", "item": "u4.az-sam-maria", "dir": "toL1", "distractors": { "en": ["you", "are"], "he": ["אתה", "את"] } },
+    { "type": "speak", "item": "u4.az-sam-maria" }
+  ]
+}

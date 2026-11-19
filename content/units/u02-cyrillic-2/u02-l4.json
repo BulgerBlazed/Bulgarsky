@@ -1,0 +1,24 @@
+{
+  "id": "u02-l4",
+  "title": { "en": "Ъ Ь Ю Я", "he": "Ъ Ь Ю Я" },
+  "tips": ["tip.er-golyam"],
+  "newItems": ["u2.er-golyam", "u2.er-malak", "u2.yu", "u2.ya", "u2.pat", "u2.yabalka", "u2.shofyor", "u2.lyubov"],
+  "exercises": [
+    { "type": "letterSound", "item": "u2.er-golyam", "dir": "letterToSound", "options": ["u2.er-golyam", "u1.a", "u2.er-malak"] },
+    { "type": "letterSound", "item": "u2.er-malak", "dir": "letterToSound", "options": ["u2.er-malak", "u2.er-golyam", "u2.ya"] },
+    { "type": "letterSound", "item": "u2.yu", "dir": "letterToSound", "options": ["u2.yu", "u2.ya", "u2.u"] },
+    { "type": "letterSound", "item": "u2.ya", "dir": "letterToSound", "options": ["u2.ya", "u2.yu", "u1.a"] },
+    {
+      "type": "letterSound", "item": "u2.er-golyam", "dir": "soundToLetter", "options": ["u2.er-golyam", "u2.er-malak", "u1.a"],
+      "explain": { "en": "Ъ (big “er”) has a sound; Ь (small “er”) only softens the о after it.", "he": "ל־Ъ יש צליל משלה; Ь רק מרככת את ה־о שאחריה." }
+    },
+    { "type": "match", "items": ["u2.er-golyam", "u2.er-malak", "u2.yu", "u2.ya"] },
+    { "type": "mc", "item": "u2.pat", "dir": "toL1" },
+    { "type": "mc", "item": "u2.yabalka", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.shofyor" },
+    { "type": "mc", "item": "u2.lyubov", "dir": "toBg" },
+    { "type": "listenType", "item": "u2.pat" },
+    { "type": "translate", "item": "u2.lyubov", "dir": "toL1" },
+    { "type": "speak", "item": "u2.yabalka" }
+  ]
+}

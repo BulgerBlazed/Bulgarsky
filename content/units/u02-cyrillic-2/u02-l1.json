@@ -1,0 +1,38 @@
+{
+  "id": "u02-l1",
+  "title": { "en": "False friends", "he": "חברים מטעים" },
+  "tips": ["tip.false-friends"],
+  "newItems": ["u2.v", "u2.n", "u2.r", "u2.s", "u2.u", "u2.h", "u2.sok", "u2.nos", "u2.sestra", "u2.uho"],
+  "exercises": [
+    {
+      "type": "letterSound", "item": "u2.v", "dir": "letterToSound", "options": ["u2.v", "u2.b", "u2.n"],
+      "explain": { "en": "В looks like B but sounds like v.", "he": "В נראית כמו B אבל נשמעת כמו ו (v)." }
+    },
+    {
+      "type": "letterSound", "item": "u2.n", "dir": "letterToSound", "options": ["u2.n", "u2.h", "u1.m"],
+      "explain": { "en": "Н looks like H but sounds like n.", "he": "Н נראית כמו H אבל נשמעת כמו נ (n)." }
+    },
+    {
+      "type": "letterSound", "item": "u2.r", "dir": "letterToSound", "options": ["u2.r", "u2.p", "u2.v"],
+      "explain": { "en": "Р looks like P but sounds like r.", "he": "Р נראית כמו P אבל נשמעת כמו ר (r)." }
+    },
+    {
+      "type": "letterSound", "item": "u2.s", "dir": "letterToSound", "options": ["u2.s", "u2.ts", "u1.k"],
+      "explain": { "en": "С looks like C but always sounds like s.", "he": "С נראית כמו C אבל תמיד נשמעת כמו ס (s)." }
+    },
+    { "type": "letterSound", "item": "u2.u", "dir": "letterToSound", "options": ["u2.u", "u2.y", "u1.o"] },
+    {
+      "type": "letterSound", "item": "u2.h", "dir": "letterToSound", "options": ["u2.h", "u2.ts", "u2.zh"],
+      "explain": { "en": "Х looks like X but sounds like a rough h.", "he": "Х נראית כמו X אבל נשמעת כמו ח." }
+    },
+    { "type": "match", "items": ["u2.v", "u2.n", "u2.r", "u2.s", "u2.u"] },
+    { "type": "letterSound", "item": "u2.r", "dir": "soundToLetter", "options": ["u2.r", "u2.n", "u2.v"] },
+    { "type": "letterSound", "item": "u2.h", "dir": "soundToLetter", "options": ["u2.h", "u2.s", "u2.u"] },
+    { "type": "mc", "item": "u2.sok", "dir": "toL1" },
+    { "type": "mc", "item": "u2.nos", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.sestra" },
+    { "type": "mc", "item": "u2.uho", "dir": "toBg" },
+    { "type": "listenType", "item": "u2.sok" },
+    { "type": "translate", "item": "u2.sestra", "dir": "toL1" }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "u03-greetings",
+  "number": 3,
+  "title": { "en": "Greetings & basic phrases", "he": "ברכות וביטויים בסיסיים" },
+  "description": {
+    "en": "Say hello and goodbye at any time of day, be polite, and survive your first small talk.",
+    "he": "להגיד שלום ולהתראות בכל שעה, לדבר בנימוס ולשרוד את השיחה הקטנה הראשונה."
+  },
+  "lessons": ["u03-l1", "u03-l2", "u03-l3", "u03-l4", "u03-l5"],
+  "checkpoint": { "count": 15, "passPercent": 80 },
+  "tips": [
+    {
+      "id": "tip.formal-informal",
+      "title": { "en": "Informal ти, polite Вие", "he": "ти לא רשמי, Вие מנומס" },
+      "body": {
+        "en": [
+          "Bulgarian has two ways to say “you”: ти for a friend, a child or family, and Вие for a stranger, an older person, or more than one person.",
+          "Greetings follow the same split: здраве́й (to one friend) vs здраве́йте (polite, or to a group). The -те ending is your politeness signal.",
+          "When in doubt with adults you don't know, use the polite form."
+        ],
+        "he": [
+          "בבולגרית יש שתי דרכים לומר „אתה/את“: ти לחבר, לילד או לבן משפחה, ו־Вие לאדם זר, למבוגר ממך או לכמה אנשים.",
+          "בעברית אין „אתם“ של כבוד — בבולגרית יש. גם הברכות מתחלקות כך: здраве́й (לחבר אחד) לעומת здраве́йте (בנימוס או לקבוצה). הסיומת ‎-те‎ היא סימן הנימוס.",
+          "אם יש ספק מול מבוגר שאינך מכיר — לכו על הצורה המנומסת."
+        ]
+      },
+      "examples": ["u3.zdravey", "u3.zdraveyte"]
+    },
+    {
+      "id": "tip.headshake",
+      "title": { "en": "Nod for “no”, shake for “yes”", "he": "הנהון זה „לא“, ניעור ראש זה „כן“" },
+      "body": {
+        "en": [
+          "Bulgarian body language has a famous twist: traditionally, shaking your head side to side means да (yes), and a nod up-and-down means не (no).",
+          "Only the gesture is reversed — the words are not. Many younger Bulgarians in cities switch to Western gestures with foreigners, so it can go either way.",
+          "Tip: trust the word you hear, not the head you see."
+        ],
+        "he": [
+          "בשפת הגוף הבולגרית יש תפנית מפורסמת: באופן מסורתי, ניעור ראש מצד לצד פירושו да (כן), והנהון למעלה ולמטה פירושו не (לא).",
+          "רק התנועה הפוכה — המילים לא. צעירים רבים בערים עוברים לתנועות ה„מערביות“ כשהם מדברים עם זרים, אז זה יכול ללכת לשני הכיוונים.",
+          "טיפ: תסמכו על המילה שאתם שומעים, לא על הראש שאתם רואים."
+        ]
+      },
+      "examples": ["u3.da", "u3.ne"]
+    },
+    {
+      "id": "tip.how-are-you",
+      "title": { "en": "“Well am” — the verb stays", "he": "„טוב אני־הווה“ — הפועל נשאר" },
+      "body": {
+        "en": [
+          "Добре́ съм literally means “well (I) am”. The pronoun аз (I) can be dropped because съм already shows who is speaking.",
+          "What you can't drop is the verb съм (am). We'll practise this a lot in the next unit."
+        ],
+        "he": [
+          "Добре́ съм פירושו המילולי „טוב (אני) נמצא“. אפשר להשמיט את аз (אני), כי הפועל съм כבר מראה מי מדבר.",
+          "מה שאי אפשר להשמיט זה הפועל съм („הנני“). בעברית אומרים „אני בסדר“ בלי פועל — בבולגרית חייבים אותו. נתרגל את זה הרבה ביחידה הבאה."
+        ]
+      },
+      "examples": ["u3.dobre-sam"]
+    }
+  ],
+  "items": [
+    { "id": "u3.zdravey", "kind": "phrase", "bg": "здравей", "stressed": "здраве́й", "translit": "zdravéy", "translitHe": "זְדְרַוֶויי", "en": "hello (to a friend)", "he": "שלום (לחבר)", "accept": { "en": ["hello", "hi"], "he": ["שלום", "היי", "הי"] }, "note": { "en": "Informal, to one person you'd call ти.", "he": "לא רשמי, לאדם אחד שפונים אליו ב־ти." } },
+    { "id": "u3.zdraveyte", "kind": "phrase", "bg": "здравейте", "stressed": "здраве́йте", "translit": "zdravéyte", "translitHe": "זְדְרַוֶוייטֶה", "en": "hello (polite / to a group)", "he": "שלום (בנימוס / לקבוצה)", "accept": { "en": ["hello", "hi", "good day"], "he": ["שלום", "שלום לכם", "היי"] } },
+    { "id": "u3.zdrasti", "kind": "phrase", "bg": "здрасти", "stressed": "здра́сти", "translit": "zdrásti", "translitHe": "זְדְרַסְטִי", "en": "hi (very casual)", "he": "היי (סלנג)", "accept": { "en": ["hi", "hey", "hello"], "he": ["היי", "הי", "שלום"] } },
+    { "id": "u3.dobro-utro", "kind": "phrase", "bg": "добро утро", "stressed": "добро́ у́тро", "translit": "dobró útro", "translitHe": "דוֹבְּרוֹ אוּטְרוֹ", "en": "good morning", "he": "בוקר טוב", "accept": { "en": ["good morning", "morning"], "he": ["בוקר טוב"] } },
+    { "id": "u3.dobar-den", "kind": "phrase", "bg": "добър ден", "stressed": "до́бър ден", "translit": "dóbăr den", "translitHe": "דוֹבְּר דֶן", "en": "good day / good afternoon", "he": "יום טוב / צהריים טובים", "accept": { "en": ["good day", "good afternoon", "hello"], "he": ["יום טוב", "צהריים טובים", "שלום"] }, "note": { "en": "The standard polite daytime greeting.", "he": "הברכה המנומסת הרגילה במהלך היום." } },
+    { "id": "u3.dobar-vecher", "kind": "phrase", "bg": "добър вечер", "stressed": "до́бър ве́чер", "translit": "dóbăr vécher", "translitHe": "דוֹבְּר וֶצֶ׳ר", "en": "good evening", "he": "ערב טוב", "accept": { "en": ["good evening", "evening"], "he": ["ערב טוב"] } },
+    { "id": "u3.dovizhdane", "kind": "phrase", "bg": "довиждане", "stressed": "дови́ждане", "translit": "dovízhdane", "translitHe": "דוֹוִיזְ׳דַנֶה", "en": "goodbye", "he": "להתראות", "accept": { "en": ["goodbye", "bye", "good bye", "see you"], "he": ["להתראות", "ביי"] } },
+    { "id": "u3.chao", "kind": "phrase", "bg": "чао", "stressed": "ча́о", "translit": "cháo", "translitHe": "צָ׳או", "en": "bye / ciao (casual)", "he": "ביי / צ׳או", "accept": { "en": ["bye", "ciao", "goodbye", "see you"], "he": ["ביי", "צ׳או", "להתראות"] } },
+    { "id": "u3.leka-nosht", "kind": "phrase", "bg": "лека нощ", "stressed": "ле́ка нощ", "translit": "léka nosht", "translitHe": "לֶקָה נוֹשְׁט", "en": "good night", "he": "לילה טוב", "accept": { "en": ["good night", "goodnight", "night"], "he": ["לילה טוב"] } },
+    { "id": "u3.da", "kind": "word", "bg": "да", "stressed": "да", "translit": "da", "translitHe": "דַה", "en": "yes", "he": "כן", "accept": { "en": ["yes", "yeah"], "he": ["כן"] } },
+    { "id": "u3.ne", "kind": "word", "bg": "не", "stressed": "не", "translit": "ne", "translitHe": "נֶה", "en": "no / not", "he": "לא", "accept": { "en": ["no", "not"], "he": ["לא"] } },
+    { "id": "u3.blagodarya", "kind": "word", "bg": "благодаря", "stressed": "благодаря́", "translit": "blagodaryá", "translitHe": "בְּלַגוֹדַרְיָה", "en": "thank you", "he": "תודה", "accept": { "en": ["thank you", "thanks"], "he": ["תודה", "תודה לך"] } },
+    { "id": "u3.molya", "kind": "word", "bg": "моля", "stressed": "мо́ля", "translit": "mólya", "translitHe": "מוֹלְיָה", "en": "please / you're welcome", "he": "בבקשה / על לא דבר", "accept": { "en": ["please", "you're welcome", "you are welcome"], "he": ["בבקשה", "על לא דבר"] }, "note": { "en": "Also the answer to благодаря́, like “you're welcome”.", "he": "זו גם התשובה ל־благодаря́ — „בבקשה“ במובן „על לא דבר“, בדיוק כמו בעברית." } },
+    { "id": "u3.izvinete", "kind": "word", "bg": "извинете", "stressed": "извине́те", "translit": "izvinéte", "translitHe": "אִיזְוִינֶטֶה", "en": "excuse me / sorry (polite)", "he": "סליחה (בנימוס)", "accept": { "en": ["excuse me", "sorry", "pardon"], "he": ["סליחה", "סלח לי", "סלחי לי"] } },
+    { "id": "u3.ne-blagodarya", "kind": "sentence", "bg": "Не, благодаря.", "stressed": "Не, благодаря́.", "translit": "Ne, blagodaryá.", "translitHe": "נֶה, בְּלַגוֹדַרְיָה.", "en": "No, thank you.", "he": "לא, תודה.", "accept": { "en": ["No, thank you.", "No, thanks.", "No thank you", "No thanks"], "he": ["לא, תודה.", "לא תודה"], "bg": ["Не, благодаря.", "Не, мерси."] } },
+    { "id": "u3.kak-si", "kind": "phrase", "bg": "Как си?", "stressed": "Как си?", "translit": "Kak si?", "translitHe": "קַק סִי?", "en": "How are you? (to a friend)", "he": "מה שלומך? (לחבר)", "accept": { "en": ["How are you?", "How are you doing?"], "he": ["מה שלומך?", "מה נשמע?", "מה שלומך"] } },
+    { "id": "u3.kak-ste", "kind": "phrase", "bg": "Как сте?", "stressed": "Как сте?", "translit": "Kak ste?", "translitHe": "קַק סְטֶה?", "en": "How are you? (polite / plural)", "he": "מה שלומכם? / מה שלומך? (בנימוס)", "accept": { "en": ["How are you?", "How are you doing?"], "he": ["מה שלומכם?", "מה שלומך?", "מה נשמע?"] } },
+    { "id": "u3.dobre-sam", "kind": "sentence", "bg": "Добре съм.", "stressed": "Добре́ съм.", "translit": "Dobré săm.", "translitHe": "דוֹבְּרֶה סְם.", "en": "I'm fine.", "he": "אני בסדר.", "accept": { "en": ["I'm fine.", "I am fine.", "I'm well.", "I am well.", "I'm good.", "I am good.", "I'm OK."], "he": ["אני בסדר.", "אני בסדר", "טוב לי", "אני טוב", "אני טובה"] } },
+    { "id": "u3.a-ti", "kind": "phrase", "bg": "А ти?", "stressed": "А ти?", "translit": "A ti?", "translitHe": "אַ טִי?", "en": "And you?", "he": "ואתה? / ואת?", "accept": { "en": ["And you?", "What about you?"], "he": ["ואתה?", "ואת?", "ואתה", "ואת", "ומה איתך?"] } },
+    { "id": "u3.dobre-blagodarya-a-ti", "kind": "sentence", "bg": "Добре, благодаря. А ти?", "stressed": "Добре́, благодаря́. А ти?", "translit": "Dobré, blagodaryá. A ti?", "translitHe": "דוֹבְּרֶה, בְּלַגוֹדַרְיָה. אַ טִי?", "en": "Fine, thank you. And you?", "he": "טוב, תודה. ואתה?", "accept": { "en": ["Fine, thank you. And you?", "Fine, thanks. And you?", "Good, thank you. And you?", "Well, thank you. And you?", "Good, thanks. And you?"], "he": ["טוב, תודה. ואתה?", "טוב, תודה. ואת?", "בסדר, תודה. ואתה?", "בסדר, תודה. ואת?"] } },
+    { "id": "u3.mersi", "kind": "word", "bg": "мерси", "stressed": "ме́рси", "translit": "mérsi", "translitHe": "מֶרְסִי", "en": "thanks (casual)", "he": "תודה (יומיומי)", "accept": { "en": ["thanks", "thank you", "merci"], "he": ["תודה", "מרסי"] }, "note": { "en": "Borrowed from French and very common in everyday speech.", "he": "שאול מצרפתית ונפוץ מאוד בדיבור היומיומי." } },
+    { "id": "u3.sazhalyavam", "kind": "word", "bg": "съжалявам", "stressed": "съжаля́вам", "translit": "săzhalyávam", "translitHe": "סְזַ׳לְיָוַם", "en": "I'm sorry", "he": "אני מצטער / מצטערת", "accept": { "en": ["I'm sorry", "I am sorry", "sorry"], "he": ["אני מצטער", "אני מצטערת", "מצטער", "מצטערת", "סליחה"] }, "note": { "en": "For real apologies; извине́те is for “excuse me”.", "he": "להתנצלות אמיתית; извине́те משמש ל„סליחה“ כדי לפנות למישהו." } },
+    { "id": "u3.nyama-problem", "kind": "phrase", "bg": "няма проблем", "stressed": "ня́ма пробле́м", "translit": "nyáma problém", "translitHe": "נְיָאמָה פְּרוֹבְּלֶם", "en": "no problem", "he": "אין בעיה", "accept": { "en": ["no problem", "no worries"], "he": ["אין בעיה", "אין בעייה"] } },
+    { "id": "u3.nazdrave", "kind": "word", "bg": "наздраве", "stressed": "наздра́ве", "translit": "nazdráve", "translitHe": "נַזְדְרַוֶה", "en": "cheers! / bless you!", "he": "לחיים! / לבריאות!", "accept": { "en": ["cheers", "bless you", "to your health"], "he": ["לחיים", "לבריאות"] }, "note": { "en": "Said when clinking glasses — and when someone sneezes.", "he": "אומרים כשמרימים כוסית — וגם כשמישהו מתעטש, בדיוק כמו „לבריאות“." } }
+  ]
+}

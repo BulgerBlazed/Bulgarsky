@@ -1,0 +1,26 @@
+{
+  "id": "u02-l3",
+  "title": { "en": "Ж Ф Ц Ч Ш Щ Й", "he": "Ж Ф Ц Ч Ш Щ Й" },
+  "tips": ["tip.hushing"],
+  "newItems": ["u2.zh", "u2.f", "u2.ts", "u2.ch", "u2.sh", "u2.sht", "u2.y", "u2.chay", "u2.kafe", "u2.zhena", "u2.oshte", "u2.chasha"],
+  "exercises": [
+    { "type": "letterSound", "item": "u2.zh", "dir": "letterToSound", "options": ["u2.zh", "u2.z", "u2.sh"] },
+    { "type": "letterSound", "item": "u2.f", "dir": "letterToSound", "options": ["u2.f", "u2.v", "u2.p"] },
+    { "type": "letterSound", "item": "u2.ts", "dir": "letterToSound", "options": ["u2.ts", "u2.ch", "u2.s"] },
+    { "type": "letterSound", "item": "u2.ch", "dir": "letterToSound", "options": ["u2.ch", "u2.ts", "u2.sh"] },
+    { "type": "letterSound", "item": "u2.sh", "dir": "letterToSound", "options": ["u2.sh", "u2.sht", "u2.zh"] },
+    {
+      "type": "letterSound", "item": "u2.sht", "dir": "letterToSound", "options": ["u2.sht", "u2.sh", "u2.ch"],
+      "explain": { "en": "In Bulgarian Щ is always “sht”.", "he": "בבולגרית Щ היא תמיד „שט“." }
+    },
+    { "type": "letterSound", "item": "u2.y", "dir": "letterToSound", "options": ["u2.y", "u2.i", "u2.u"] },
+    { "type": "match", "items": ["u2.zh", "u2.ts", "u2.ch", "u2.sh", "u2.sht"] },
+    { "type": "mc", "item": "u2.chay", "dir": "toL1" },
+    { "type": "mc", "item": "u2.kafe", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.zhena" },
+    { "type": "mc", "item": "u2.oshte", "dir": "toL1" },
+    { "type": "mc", "item": "u2.chasha", "dir": "toBg" },
+    { "type": "listenType", "item": "u2.chay" },
+    { "type": "translate", "item": "u2.kafe", "dir": "toBg" }
+  ]
+}

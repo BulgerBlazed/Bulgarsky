@@ -1,0 +1,28 @@
+{
+  "id": "u04-l4",
+  "title": { "en": "Where are you from?", "he": "מאיפה אתה?" },
+  "newItems": ["u4.otkade-si", "u4.ot", "u4.izrael", "u4.az-sam-ot-izrael"],
+  "exercises": [
+    { "type": "mc", "item": "u4.otkade-si", "dir": "toL1" },
+    { "type": "mc", "item": "u4.ot", "dir": "toL1" },
+    { "type": "listenPick", "item": "u4.izrael" },
+    { "type": "wordBank", "item": "u4.az-sam-ot-izrael", "dir": "toBg", "distractors": { "bg": ["си", "той"] } },
+    { "type": "match", "items": ["u4.otkade-si", "u4.ot", "u4.izrael", "u4.kak-se-kazvash"] },
+    { "type": "translate", "item": "u4.az-sam-ot-izrael", "dir": "toL1" },
+    { "type": "mc", "item": "u4.izrael", "dir": "toBg" },
+    { "type": "listenType", "item": "u4.ot" },
+    { "type": "wordBank", "item": "u4.otkade-si", "dir": "toBg", "distractors": { "bg": ["как", "сте"] } },
+    {
+      "type": "fillBlank", "before": "Аз съм ", "after": " Изра́ел.", "answer": "от",
+      "options": ["от", "и", "се"],
+      "translation": { "en": "I'm from Israel.", "he": "אני מישראל." },
+      "explain": {
+        "en": "от = from. In Hebrew it's the prefix מ־; in Bulgarian it's a separate word.",
+        "he": "от = „מ־“. בעברית זו תחילית שנדבקת למילה; בבולגרית זו מילה נפרדת."
+      }
+    },
+    { "type": "translate", "item": "u4.otkade-si", "dir": "toBg" },
+    { "type": "wordBank", "item": "u4.az-sam-ot-izrael", "dir": "toL1", "distractors": { "en": ["you", "Bulgaria"], "he": ["אתה", "מבולגריה"] } },
+    { "type": "speak", "item": "u4.az-sam-ot-izrael" }
+  ]
+}

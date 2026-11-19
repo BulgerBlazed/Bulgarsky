@@ -1,0 +1,28 @@
+{
+  "id": "u04-l5",
+  "title": { "en": "Countries", "he": "מדינות" },
+  "tips": ["tip.no-cases"],
+  "newItems": ["u4.amerika", "u4.angliya", "u4.toy-e-ot-amerika", "u4.tya-e-ot-bulgaria"],
+  "exercises": [
+    { "type": "mc", "item": "u4.amerika", "dir": "toL1" },
+    { "type": "mc", "item": "u4.angliya", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.balgariya", "options": ["u2.balgariya", "u4.amerika", "u4.angliya"] },
+    { "type": "match", "items": ["u4.amerika", "u4.angliya", "u4.izrael", "u2.balgariya"] },
+    { "type": "wordBank", "item": "u4.toy-e-ot-amerika", "dir": "toBg", "distractors": { "bg": ["тя", "съм"] } },
+    { "type": "wordBank", "item": "u4.tya-e-ot-bulgaria", "dir": "toBg", "distractors": { "bg": ["той", "си"] } },
+    { "type": "translate", "item": "u4.toy-e-ot-amerika", "dir": "toL1" },
+    {
+      "type": "fillBlank", "before": "Тя е от ", "after": ".", "answer": "Бълга́рия",
+      "options": ["Бълга́рия", "Бълга́рии", "Бълга́рию"],
+      "translation": { "en": "She is from Bulgaria.", "he": "היא מבולגריה." },
+      "explain": {
+        "en": "No cases in Bulgarian: the country name never changes after от. (The other endings look Russian — Bulgarian dropped them.)",
+        "he": "אין יחסות בבולגרית: שם המדינה לא משתנה אחרי от, בדיוק כמו בעברית. (הסיומות האחרות נראות רוסיות — בבולגרית הן נעלמו.)"
+      }
+    },
+    { "type": "listenType", "item": "u4.angliya" },
+    { "type": "mc", "item": "u4.tya-e-ot-bulgaria", "dir": "toL1" },
+    { "type": "translate", "item": "u4.angliya", "dir": "toBg" },
+    { "type": "speak", "item": "u4.tya-e-ot-bulgaria" }
+  ]
+}

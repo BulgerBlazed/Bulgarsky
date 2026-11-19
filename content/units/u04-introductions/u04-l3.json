@@ -1,0 +1,36 @@
+{
+  "id": "u04-l3",
+  "title": { "en": "He and she", "he": "הוא והיא" },
+  "newItems": ["u4.toy", "u4.tya", "u4.toy-e-ivan", "u4.tya-e-maria"],
+  "exercises": [
+    { "type": "mc", "item": "u4.toy", "dir": "toL1" },
+    { "type": "mc", "item": "u4.tya", "dir": "toL1" },
+    { "type": "listenPick", "item": "u4.toy-e-ivan", "options": ["u4.toy-e-ivan", "u4.tya-e-maria", "u4.az-sam-maria"] },
+    { "type": "match", "items": ["u4.toy", "u4.tya", "u4.az", "u4.ti"] },
+    { "type": "wordBank", "item": "u4.tya-e-maria", "dir": "toBg", "distractors": { "bg": ["съм", "той"] } },
+    {
+      "type": "fillBlank", "before": "Той ", "after": " Ива́н.", "answer": "е",
+      "options": ["е", "съм", "си"],
+      "translation": { "en": "He is Ivan.", "he": "הוא איוון." },
+      "explain": {
+        "en": "For he, she or it, “is” = е. съм is “I am”, си is “you are”.",
+        "he": "עם הוא, היא או זה — הפועל הוא е. съм = אני, си = אתה/את."
+      }
+    },
+    { "type": "translate", "item": "u4.toy-e-ivan", "dir": "toL1" },
+    { "type": "listenType", "item": "u4.tya" },
+    { "type": "mc", "item": "u4.tya-e-maria", "dir": "toBg" },
+    {
+      "type": "fillBlank", "before": "Тя ", "after": " Мари́я.", "answer": "е",
+      "options": ["е", "си", "съм"],
+      "translation": { "en": "She is Maria.", "he": "היא מריה." },
+      "explain": {
+        "en": "е works for both той (he) and тя (she) — no gender change in the verb.",
+        "he": "е מתאים גם ל־той (הוא) וגם ל־тя (היא) — הפועל לא משתנה לפי מין, בניגוד לעברית."
+      }
+    },
+    { "type": "translate", "item": "u4.toy", "dir": "toBg" },
+    { "type": "wordBank", "item": "u4.toy-e-ivan", "dir": "toL1", "distractors": { "en": ["she", "am"], "he": ["היא", "אני"] } },
+    { "type": "speak", "item": "u4.tya-e-maria" }
+  ]
+}

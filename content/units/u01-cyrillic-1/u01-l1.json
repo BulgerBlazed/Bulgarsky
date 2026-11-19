@@ -1,0 +1,20 @@
+{
+  "id": "u01-l1",
+  "title": { "en": "А, О, М", "he": "А, О, М" },
+  "tips": ["tip.cyrillic-intro"],
+  "newItems": ["u1.a", "u1.o", "u1.m", "u1.mama"],
+  "exercises": [
+    { "type": "letterSound", "item": "u1.a", "dir": "letterToSound", "options": ["u1.a", "u1.o", "u1.m"] },
+    { "type": "letterSound", "item": "u1.o", "dir": "letterToSound", "options": ["u1.o", "u1.a", "u1.m"] },
+    { "type": "letterSound", "item": "u1.m", "dir": "letterToSound", "options": ["u1.m", "u1.a", "u1.o"] },
+    { "type": "letterSound", "item": "u1.a", "dir": "soundToLetter", "options": ["u1.a", "u1.o", "u1.m"] },
+    { "type": "match", "items": ["u1.a", "u1.o", "u1.m"] },
+    { "type": "letterSound", "item": "u1.m", "dir": "soundToLetter", "options": ["u1.m", "u1.a", "u1.o"] },
+    { "type": "letterSound", "item": "u1.o", "dir": "soundToLetter", "options": ["u1.o", "u1.a", "u1.m"] },
+    { "type": "mc", "item": "u1.mama", "dir": "toL1" },
+    { "type": "listenPick", "item": "u1.mama" },
+    { "type": "listenType", "item": "u1.mama" },
+    { "type": "translate", "item": "u1.mama", "dir": "toBg" },
+    { "type": "speak", "item": "u1.mama" }
+  ]
+}

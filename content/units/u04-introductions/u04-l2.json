@@ -1,0 +1,40 @@
+{
+  "id": "u04-l2",
+  "title": { "en": "What's your name?", "he": "איך קוראים לך?" },
+  "tips": ["tip.kazvam-se"],
+  "newItems": ["u4.kak-se-kazvash", "u4.kazvam-se-ivan", "u4.kak-se-kazvate", "u4.priyatno"],
+  "exercises": [
+    { "type": "mc", "item": "u4.kak-se-kazvash", "dir": "toL1" },
+    { "type": "listenPick", "item": "u4.kazvam-se-ivan" },
+    { "type": "mc", "item": "u4.priyatno", "dir": "toL1" },
+    {
+      "type": "mc", "item": "u4.kak-se-kazvate", "dir": "toL1",
+      "explain": { "en": "-те makes it polite: ка́звате is for someone you call Вие.", "he": "‎-те‎ הופכת את זה למנומס: ка́звате פונה למי שאומרים לו Вие." }
+    },
+    { "type": "match", "items": ["u4.kak-se-kazvash", "u4.kazvam-se-ivan", "u4.priyatno", "u3.zdravey"] },
+    { "type": "wordBank", "item": "u4.kak-se-kazvash", "dir": "toBg", "distractors": { "bg": ["си", "съм"] } },
+    { "type": "wordBank", "item": "u4.kazvam-se-ivan", "dir": "toBg", "distractors": { "bg": ["съм", "ти"] } },
+    { "type": "translate", "item": "u4.priyatno", "dir": "toL1" },
+    {
+      "type": "fillBlank", "before": "Как се ", "after": "?", "answer": "ка́зваш",
+      "options": ["ка́зваш", "ка́звам"],
+      "translation": { "en": "What's your name?", "he": "איך קוראים לך?" },
+      "explain": {
+        "en": "Asking about “you” → ending -ш. The ending -м is for “I”.",
+        "he": "שואלים על „אתה/את“ ← סיומת ‎-ш. הסיומת ‎-м היא ל„אני“."
+      }
+    },
+    { "type": "translate", "item": "u4.priyatno", "dir": "toBg" },
+    {
+      "type": "fillBlank", "before": "Ка́звам ", "after": " Ива́н.", "answer": "се",
+      "options": ["се", "съм", "си"],
+      "translation": { "en": "My name is Ivan.", "he": "קוראים לי איוון." },
+      "explain": {
+        "en": "ка́звам се is a fixed pair: “I call myself”. Don't use съм here.",
+        "he": "ка́звам се הוא צמד קבוע: „אני קורא לעצמי“. כאן לא משתמשים ב־съм."
+      }
+    },
+    { "type": "wordBank", "item": "u4.kazvam-se-ivan", "dir": "toL1", "distractors": { "en": ["your", "what"], "he": ["לך", "איך"] } },
+    { "type": "speak", "item": "u4.priyatno" }
+  ]
+}

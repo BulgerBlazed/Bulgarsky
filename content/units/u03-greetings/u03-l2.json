@@ -1,0 +1,28 @@
+{
+  "id": "u03-l2",
+  "title": { "en": "Goodbye!", "he": "להתראות!" },
+  "newItems": ["u3.dovizhdane", "u3.chao", "u3.leka-nosht", "u3.zdrasti"],
+  "exercises": [
+    { "type": "mc", "item": "u3.dovizhdane", "dir": "toL1" },
+    { "type": "mc", "item": "u3.chao", "dir": "toL1" },
+    { "type": "listenPick", "item": "u3.leka-nosht" },
+    { "type": "mc", "item": "u3.zdrasti", "dir": "toBg" },
+    { "type": "match", "items": ["u3.dovizhdane", "u3.chao", "u3.leka-nosht", "u3.zdrasti", "u3.zdravey"] },
+    { "type": "translate", "item": "u3.leka-nosht", "dir": "toL1" },
+    { "type": "listenType", "item": "u3.chao" },
+    { "type": "mc", "item": "u3.dovizhdane", "dir": "toBg" },
+    { "type": "translate", "item": "u3.dovizhdane", "dir": "toBg" },
+    { "type": "wordBank", "item": "u3.leka-nosht", "dir": "toBg", "distractors": { "bg": ["добро́", "ден"] } },
+    { "type": "listenPick", "item": "u3.zdrasti" },
+    {
+      "type": "fillBlank", "before": "Ле́ка ", "after": "!", "answer": "нощ",
+      "options": ["нощ", "у́тро", "ден"],
+      "translation": { "en": "Good night!", "he": "לילה טוב!" },
+      "explain": {
+        "en": "“Good night” uses ле́ка (light, easy) — literally “an easy night”.",
+        "he": "ב„לילה טוב“ משתמשים ב־ле́ка (קלה) — מילולית „לילה קל“."
+      }
+    },
+    { "type": "speak", "item": "u3.dovizhdane" }
+  ]
+}

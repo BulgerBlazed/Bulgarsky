@@ -1,0 +1,122 @@
+{
+  "id": "u04-introductions",
+  "number": 4,
+  "title": { "en": "Introductions", "he": "היכרות" },
+  "description": {
+    "en": "Say who you are, ask someone's name, and talk about where people are from.",
+    "he": "להגיד מי אתם, לשאול איך קוראים למישהו, ולספר מאיפה אנשים באים."
+  },
+  "lessons": ["u04-l1", "u04-l2", "u04-l3", "u04-l4", "u04-l5", "u04-l6"],
+  "checkpoint": { "count": 15, "passPercent": 80 },
+  "tips": [
+    {
+      "id": "tip.to-be",
+      "title": { "en": "You can't skip “to be”", "he": "אי אפשר לדלג על „להיות“" },
+      "body": {
+        "en": [
+          "In Bulgarian the present tense of “to be” is always there: Аз съм Мари́я = I am Maria.",
+          "What you CAN drop is the pronoun, because the verb already tells you who it is: Мари́я съм also means “I'm Maria”.",
+          "съм = (I) am · си = (you) are · е = (he/she/it) is."
+        ],
+        "he": [
+          "בעברית אומרים „אני מריה“ — בלי שום פועל. בבולגרית זה בלתי אפשרי: הפועל „להיות“ בהווה חייב להופיע. Аз съм Мари́я = „אני הנני מריה“.",
+          "מה שכן אפשר להשמיט זה את הכינוי, כי הפועל כבר מראה על מי מדובר: Мари́я съм פירושו גם „אני מריה“. זה בדיוק ההפך מעברית — שם משמיטים את הפועל, כאן את ה„אני“.",
+          "съм = (אני) · си = (אתה/את) · е = (הוא/היא)."
+        ]
+      },
+      "examples": ["u4.az-sam", "u4.ti-si", "u4.az-sam-maria"]
+    },
+    {
+      "id": "tip.kazvam-se",
+      "title": { "en": "“I call myself…”", "he": "„אני קורא לעצמי…“" },
+      "body": {
+        "en": [
+          "Bulgarians don't say “my name is”. They say Ка́звам се Ива́н — literally “I call myself Ivan”.",
+          "The little word се means “myself / yourself”. The verb ending shows the person: ка́звам (I call) · ка́зваш (you call) · ка́звате (you, polite)."
+        ],
+        "he": [
+          "בבולגרית לא אומרים „השם שלי הוא“. אומרים Ка́звам се Ива́н — מילולית „אני קורא לעצמי איוון“. דומה לעברית „קוראים לי“, רק בגוף ראשון.",
+          "המילה הקטנה се פירושה „את עצמי / את עצמך“. הסיומת של הפועל מראה מי מדבר: ка́звам (אני) · ка́зваш (אתה/את) · ка́звате (בנימוס)."
+        ]
+      },
+      "examples": ["u4.kazvam-se-ivan", "u4.kak-se-kazvash"]
+    },
+    {
+      "id": "tip.no-cases",
+      "title": { "en": "No cases — the noun stays put", "he": "אין יחסות — שם העצם לא משתנה" },
+      "body": {
+        "en": [
+          "Most Slavic languages change the ending of a noun depending on its role in the sentence (cases). Bulgarian lost almost all of that.",
+          "So after от (from) the country stays exactly the same: Бълга́рия → от Бълга́рия. Learn one form of each noun and you're done.",
+          "Only pronouns keep a few case forms — like ми (to me) in Прия́тно ми е."
+        ],
+        "he": [
+          "רוב השפות הסלאביות משנות את סוף שם העצם לפי תפקידו במשפט (יחסות). בבולגרית כמעט כל זה נעלם.",
+          "בדיוק כמו בעברית — אחרי от („מ־“) שם המדינה נשאר בלי שינוי: Бълга́рия ← от Бълга́рия. לומדים צורה אחת של כל שם עצם, וזהו.",
+          "רק הכינויים שומרים על כמה צורות — כמו ми („לי“) ב־Прия́тно ми е („נעים לי“)."
+        ]
+      },
+      "examples": ["u4.tya-e-ot-bulgaria"]
+    },
+    {
+      "id": "tip.gender-ka",
+      "title": { "en": "He's a студе́нт, she's a студе́нтка", "he": "הוא студе́нт, היא студе́нтка" },
+      "body": {
+        "en": [
+          "Many words for people have a masculine and a feminine form. The feminine often adds -ка: студе́нт → студе́нтка.",
+          "Choose the form that matches the person you're talking about — including yourself!"
+        ],
+        "he": [
+          "להרבה מילים שמתארות אנשים יש צורת זכר וצורת נקבה — בדיוק כמו סטודנט/סטודנטית. בבולגרית הנקבה מוסיפה לרוב ‎-ка: студе́нт ← студе́нтка.",
+          "בחרו את הצורה שמתאימה לאדם שמדברים עליו — כולל עליכם!"
+        ]
+      },
+      "examples": ["u4.student", "u4.studentka"]
+    },
+    {
+      "id": "tip.postfixed-article",
+      "title": { "en": "Sneak peek: “the” goes at the end", "he": "הצצה: ה־„ה׳“ באה בסוף" },
+      "body": {
+        "en": [
+          "Bulgarian has no separate word for “the”. Instead, it's glued to the END of the noun: кафе́ (coffee) → кафе́то (the coffee), жена́ (woman) → жена́та (the woman).",
+          "The ending depends on the noun: -та for most feminine nouns, -то for neuter, -ът/-а for masculine, -те for plurals. Unit 5 covers it properly."
+        ],
+        "he": [
+          "בעברית ה־„ה׳“ הידיעה היא תחילית: קפה ← הקפה. בבולגרית זה בדיוק להפך — היידוע הוא סיומת שנדבקת לסוף המילה: кафе́ ← кафе́то (הקפה), жена́ ← жена́та (האישה).",
+          "הסיומת תלויה במילה: ‎-та לרוב שמות הנקבה, ‎-то לסתמי, ‎-ът/-а לזכר, ‎-те לרבים. ביחידה 5 נלמד את זה לעומק."
+        ]
+      },
+      "examples": ["u4.kafeto", "u4.zhenata"]
+    }
+  ],
+  "items": [
+    { "id": "u4.az", "kind": "word", "bg": "аз", "stressed": "аз", "translit": "az", "translitHe": "אַז", "en": "I", "he": "אני", "accept": { "en": ["I", "me"], "he": ["אני"] } },
+    { "id": "u4.ti", "kind": "word", "bg": "ти", "stressed": "ти", "translit": "ti", "translitHe": "טִי", "en": "you (informal)", "he": "אתה / את", "accept": { "en": ["you"], "he": ["אתה", "את"] } },
+    { "id": "u4.az-sam", "kind": "phrase", "bg": "аз съм", "stressed": "аз съм", "translit": "az săm", "translitHe": "אַז סְם", "en": "I am", "he": "אני (הנני)", "accept": { "en": ["I am", "I'm"], "he": ["אני", "הנני", "אני הנני"], "bg": ["аз съм", "съм"] } },
+    { "id": "u4.ti-si", "kind": "phrase", "bg": "ти си", "stressed": "ти си", "translit": "ti si", "translitHe": "טִי סִי", "en": "you are", "he": "אתה / את (הנך)", "accept": { "en": ["you are", "you're"], "he": ["אתה", "את", "הנך"], "bg": ["ти си", "си"] } },
+    { "id": "u4.az-sam-maria", "kind": "sentence", "bg": "Аз съм Мария.", "stressed": "Аз съм Мари́я.", "translit": "Az săm Maríya.", "translitHe": "אַז סְם מַרִיָה.", "en": "I am Maria.", "he": "אני מריה.", "accept": { "en": ["I am Maria.", "I'm Maria."], "he": ["אני מריה."], "bg": ["Аз съм Мария.", "Мария съм."] } },
+    { "id": "u4.kak-se-kazvash", "kind": "sentence", "bg": "Как се казваш?", "stressed": "Как се ка́зваш?", "translit": "Kak se kázvash?", "translitHe": "קַק סֶה קַזְוַוש?", "en": "What's your name?", "he": "איך קוראים לך?", "accept": { "en": ["What's your name?", "What is your name?"], "he": ["איך קוראים לך?", "מה שמך?", "מה השם שלך?"] } },
+    { "id": "u4.kazvam-se-ivan", "kind": "sentence", "bg": "Казвам се Иван.", "stressed": "Ка́звам се Ива́н.", "translit": "Kázvam se Iván.", "translitHe": "קַזְוַם סֶה אִיוַון.", "en": "My name is Ivan.", "he": "קוראים לי איוון.", "accept": { "en": ["My name is Ivan.", "I'm Ivan.", "I am Ivan.", "I'm called Ivan."], "he": ["קוראים לי איוון.", "שמי איוון.", "השם שלי איוון.", "אני איוון."], "bg": ["Казвам се Иван.", "Аз се казвам Иван."] } },
+    { "id": "u4.kak-se-kazvate", "kind": "sentence", "bg": "Как се казвате?", "stressed": "Как се ка́звате?", "translit": "Kak se kázvate?", "translitHe": "קַק סֶה קַזְוַוטֶה?", "en": "What's your name? (polite)", "he": "איך קוראים לך? (בנימוס)", "accept": { "en": ["What's your name?", "What is your name?"], "he": ["איך קוראים לך?", "איך קוראים לכם?", "מה שמך?"] } },
+    { "id": "u4.priyatno", "kind": "sentence", "bg": "Приятно ми е.", "stressed": "Прия́тно ми е.", "translit": "Priyátno mi e.", "translitHe": "פְּרִיָאטְנוֹ מִי אֶה.", "en": "Nice to meet you.", "he": "נעים מאוד.", "accept": { "en": ["Nice to meet you.", "Pleased to meet you.", "Nice to meet you"], "he": ["נעים מאוד.", "נעים להכיר.", "נעים מאוד", "נעים לי"], "bg": ["Приятно ми е.", "Приятно ми е"] }, "note": { "en": "Literally “it's pleasant to me”.", "he": "מילולית „נעים לי“." } },
+    { "id": "u4.toy", "kind": "word", "bg": "той", "stressed": "той", "translit": "toy", "translitHe": "טוֹי", "en": "he", "he": "הוא", "accept": { "en": ["he"], "he": ["הוא"] } },
+    { "id": "u4.tya", "kind": "word", "bg": "тя", "stressed": "тя", "translit": "tya", "translitHe": "טְיָה", "en": "she", "he": "היא", "accept": { "en": ["she"], "he": ["היא"] } },
+    { "id": "u4.toy-e-ivan", "kind": "sentence", "bg": "Той е Иван.", "stressed": "Той е Ива́н.", "translit": "Toy e Iván.", "translitHe": "טוֹי אֶה אִיוַון.", "en": "He is Ivan.", "he": "הוא איוון.", "accept": { "en": ["He is Ivan.", "He's Ivan."], "he": ["הוא איוון.", "זה איוון."], "bg": ["Той е Иван.", "Иван е."] } },
+    { "id": "u4.tya-e-maria", "kind": "sentence", "bg": "Тя е Мария.", "stressed": "Тя е Мари́я.", "translit": "Tya e Maríya.", "translitHe": "טְיָה אֶה מַרִיָה.", "en": "She is Maria.", "he": "היא מריה.", "accept": { "en": ["She is Maria.", "She's Maria."], "he": ["היא מריה.", "זאת מריה."], "bg": ["Тя е Мария.", "Мария е."] } },
+    { "id": "u4.otkade-si", "kind": "sentence", "bg": "Откъде си?", "stressed": "Откъде́ си?", "translit": "Otkădé si?", "translitHe": "אוֹטְקְדֶה סִי?", "en": "Where are you from?", "he": "מאיפה אתה? / מאיפה את?", "accept": { "en": ["Where are you from?"], "he": ["מאיפה אתה?", "מאיפה את?", "מאיפה אתה", "מאיפה את"], "bg": ["Откъде си?", "От къде си?"] } },
+    { "id": "u4.ot", "kind": "word", "bg": "от", "stressed": "от", "translit": "ot", "translitHe": "אוֹט", "en": "from", "he": "מ־ / מן", "accept": { "en": ["from", "of"], "he": ["מ", "מן", "מ־"] } },
+    { "id": "u4.izrael", "kind": "word", "bg": "Израел", "stressed": "Изра́ел", "translit": "Izráel", "translitHe": "אִיזְרַאֶל", "en": "Israel", "he": "ישראל", "accept": { "en": ["Israel"], "he": ["ישראל"] } },
+    { "id": "u4.az-sam-ot-izrael", "kind": "sentence", "bg": "Аз съм от Израел.", "stressed": "Аз съм от Изра́ел.", "translit": "Az săm ot Izráel.", "translitHe": "אַז סְם אוֹט אִיזְרַאֶל.", "en": "I'm from Israel.", "he": "אני מישראל.", "accept": { "en": ["I'm from Israel.", "I am from Israel."], "he": ["אני מישראל.", "אני מישראל"], "bg": ["Аз съм от Израел.", "От Израел съм."] } },
+    { "id": "u4.amerika", "kind": "word", "bg": "Америка", "stressed": "Аме́рика", "translit": "Amérika", "translitHe": "אַמֶרִיקָה", "en": "America", "he": "אמריקה", "accept": { "en": ["America", "the USA", "USA"], "he": ["אמריקה", "ארצות הברית"] } },
+    { "id": "u4.angliya", "kind": "word", "bg": "Англия", "stressed": "А́нглия", "translit": "Ángliya", "translitHe": "אַנְגְלִיָה", "en": "England", "he": "אנגליה", "accept": { "en": ["England"], "he": ["אנגליה"] } },
+    { "id": "u4.toy-e-ot-amerika", "kind": "sentence", "bg": "Той е от Америка.", "stressed": "Той е от Аме́рика.", "translit": "Toy e ot Amérika.", "translitHe": "טוֹי אֶה אוֹט אַמֶרִיקָה.", "en": "He is from America.", "he": "הוא מאמריקה.", "accept": { "en": ["He is from America.", "He's from America."], "he": ["הוא מאמריקה."] } },
+    { "id": "u4.tya-e-ot-bulgaria", "kind": "sentence", "bg": "Тя е от България.", "stressed": "Тя е от Бълга́рия.", "translit": "Tya e ot Bălgáriya.", "translitHe": "טְיָה אֶה אוֹט בְּלְגַרְיָה.", "en": "She is from Bulgaria.", "he": "היא מבולגריה.", "accept": { "en": ["She is from Bulgaria.", "She's from Bulgaria."], "he": ["היא מבולגריה."] } },
+    { "id": "u4.student", "kind": "word", "bg": "студент", "stressed": "студе́нт", "translit": "studént", "translitHe": "סְטוּדֶנְט", "en": "student (male)", "he": "סטודנט", "accept": { "en": ["student", "a student"], "he": ["סטודנט"] } },
+    { "id": "u4.studentka", "kind": "word", "bg": "студентка", "stressed": "студе́нтка", "translit": "studéntka", "translitHe": "סְטוּדֶנְטְקָה", "en": "student (female)", "he": "סטודנטית", "accept": { "en": ["student", "a student", "female student"], "he": ["סטודנטית"] } },
+    { "id": "u4.i", "kind": "word", "bg": "и", "stressed": "и", "translit": "i", "translitHe": "אִי", "en": "and", "he": "ו־ / וגם", "accept": { "en": ["and"], "he": ["ו", "וגם", "ו־"] } },
+    { "id": "u4.az-sam-studentka", "kind": "sentence", "bg": "Аз съм студентка.", "stressed": "Аз съм студе́нтка.", "translit": "Az săm studéntka.", "translitHe": "אַז סְם סְטוּדֶנְטְקָה.", "en": "I'm a student. (female)", "he": "אני סטודנטית.", "accept": { "en": ["I'm a student.", "I am a student."], "he": ["אני סטודנטית."], "bg": ["Аз съм студентка.", "Студентка съм."] } },
+    { "id": "u4.priyatno-az-sam-ivan", "kind": "sentence", "bg": "Приятно ми е, аз съм Иван.", "stressed": "Прия́тно ми е, аз съм Ива́н.", "translit": "Priyátno mi e, az săm Iván.", "translitHe": "פְּרִיָאטְנוֹ מִי אֶה, אַז סְם אִיוַון.", "en": "Nice to meet you, I'm Ivan.", "he": "נעים מאוד, אני איוון.", "accept": { "en": ["Nice to meet you, I'm Ivan.", "Nice to meet you, I am Ivan.", "Pleased to meet you, I'm Ivan."], "he": ["נעים מאוד, אני איוון.", "נעים להכיר, אני איוון."], "bg": ["Приятно ми е, аз съм Иван.", "Приятно ми е, Иван съм."] } },
+    { "id": "u4.kafeto", "kind": "word", "bg": "кафето", "stressed": "кафе́то", "translit": "kaféto", "translitHe": "קַפֶטוֹ", "en": "the coffee", "he": "הקפה", "accept": { "en": ["the coffee", "the cafe", "the café"], "he": ["הקפה", "בית הקפה"] } },
+    { "id": "u4.zhenata", "kind": "word", "bg": "жената", "stressed": "жена́та", "translit": "zhenáta", "translitHe": "זֶ׳נַטָה", "en": "the woman", "he": "האישה", "accept": { "en": ["the woman", "the wife"], "he": ["האישה", "האשה"] } }
+  ]
+}

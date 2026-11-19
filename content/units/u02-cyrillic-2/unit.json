@@ -1,0 +1,120 @@
+{
+  "id": "u02-cyrillic-2",
+  "number": 2,
+  "alphabet": true,
+  "title": { "en": "Cyrillic II: False friends & new letters", "he": "קירילית ב׳: חברים מטעים ואותיות חדשות" },
+  "description": {
+    "en": "Letters that look English but lie (В Н Р С У Х), then the rest of the alphabet — and you can read България!",
+    "he": "אותיות שנראות כמו באנגלית אבל משקרות (В Н Р С У Х), ואז שאר האלפבית — ותוכלו לקרוא България!"
+  },
+  "lessons": ["u02-l1", "u02-l2", "u02-l3", "u02-l4", "u02-l5"],
+  "checkpoint": { "count": 15, "passPercent": 80 },
+  "tips": [
+    {
+      "id": "tip.false-friends",
+      "title": { "en": "False friends: they look English, but…", "he": "חברים מטעים: נראות כמו באנגלית, אבל…" },
+      "body": {
+        "en": [
+          "These six letters look like English letters but sound completely different:",
+          "В = v · Н = n · Р = r (rolled) · С = s · У = u (as in “boot”) · Х = h (rough, as in Scottish “loch”).",
+          "So РОМ is not “POM” — it's “rom”. Read slowly and don't trust your English eyes."
+        ],
+        "he": [
+          "שש האותיות האלה נראות כמו אותיות באנגלית, אבל נשמעות אחרת לגמרי:",
+          "В = ו (v) · Н = נ (n) · Р = ר מתגלגלת (r) · С = ס (s) · У = אוּ (u) · Х = ח (h), בדיוק כמו ח׳ עברית טובה.",
+          "אז РОМ זה לא „POM“ — זה „רום“. קראו לאט ואל תסמכו על העיניים האנגליות שלכם."
+        ]
+      }
+    },
+    {
+      "id": "tip.greek-letters",
+      "title": { "en": "Letters with Greek roots", "he": "אותיות עם שורשים יווניים" },
+      "body": {
+        "en": [
+          "Г, Д, Л and П come from Greek (Γ, Δ, Λ, Π). If you know a little maths, you already know them: Г = g, Д = d, Л = l, П = p.",
+          "Б is b, З is z (it looks like the number 3!), and И is the vowel i — not an English N backwards."
+        ],
+        "he": [
+          "Г, Д, Л ו־П מגיעות מיוונית (Γ, Δ, Λ, Π). אם אתם זוכרים קצת מתמטיקה — כבר פגשתם אותן: Г = ג, Д = ד, Л = ל, П = פּ.",
+          "Б היא ב׳ דגושה (b), З היא ז (היא נראית כמו הספרה 3!), ו־И היא התנועה i — לא N הפוכה."
+        ]
+      }
+    },
+    {
+      "id": "tip.hushing",
+      "title": { "en": "Hushing sounds — easy for Hebrew speakers", "he": "השורקות — קל לדוברי עברית" },
+      "body": {
+        "en": [
+          "Ж = zh (as in “measure”), Ч = ch (“chair”), Ш = sh (“shop”), Ц = ts (“cats”), Ф = f, Й = y (“boy”).",
+          "Щ is special: in Bulgarian it's always “sht”, as in “ashtray”. (In Russian it sounds different — don't mix them up.)"
+        ],
+        "he": [
+          "Ж = ז׳ (כמו ב„ז׳קט“), Ч = צ׳ (כמו ב„צ׳יפס“), Ш = ש, Ц = צ, Ф = פ, Й = י (כמו ב„בוי“).",
+          "דוברי עברית כבר מכירים את כל הצלילים האלה! ו־Щ מיוחדת: בבולגרית היא תמיד „שט“ (sht). ברוסית היא נשמעת אחרת — אל תתבלבלו."
+        ]
+      }
+    },
+    {
+      "id": "tip.er-golyam",
+      "title": { "en": "Ъ: Bulgaria's signature vowel", "he": "Ъ: התנועה המיוחדת של בולגרית" },
+      "body": {
+        "en": [
+          "Ъ is a short, relaxed “uh”, like the “u” in “but” or the “a” in “about”. It appears everywhere: България, път, до́бър.",
+          "Ь never appears alone — only before о, as in шофьо́р (shofyór). Ю = yu, Я = ya."
+        ],
+        "he": [
+          "Ъ היא תנועה קצרה ורפויה, משהו כמו „אֶ“ חטופה — קרוב לשווא נע בעברית. היא מופיעה בכל מקום: България, път, до́бър. אין לה מקבילה מדויקת באותיות עבריות, אז כדאי להקשיב היטב.",
+          "Ь אף פעם לא מופיעה לבד — רק לפני о, כמו ב־шофьо́р (שוֹפְיוֹר). Ю = יוּ, Я = יָה."
+        ]
+      }
+    }
+  ],
+  "items": [
+    { "id": "u2.v", "kind": "letter", "bg": "В в", "stressed": "В в", "translit": "v", "translitHe": "ו", "say": "въ", "en": "v — looks like B, sounds like v", "he": "v — נראית כמו B, נשמעת כמו ו", "accept": { "en": ["v"], "he": ["v", "ו"] } },
+    { "id": "u2.n", "kind": "letter", "bg": "Н н", "stressed": "Н н", "translit": "n", "translitHe": "נ", "say": "нъ", "en": "n — looks like H, sounds like n", "he": "n — נראית כמו H, נשמעת כמו נ", "accept": { "en": ["n"], "he": ["n", "נ"] } },
+    { "id": "u2.r", "kind": "letter", "bg": "Р р", "stressed": "Р р", "translit": "r", "translitHe": "ר", "say": "ръ", "en": "r (rolled) — looks like P", "he": "r מתגלגלת — נראית כמו P", "accept": { "en": ["r"], "he": ["r", "ר"] } },
+    { "id": "u2.s", "kind": "letter", "bg": "С с", "stressed": "С с", "translit": "s", "translitHe": "ס", "say": "съ", "en": "s — looks like C", "he": "s — נראית כמו C", "accept": { "en": ["s"], "he": ["s", "ס"] } },
+    { "id": "u2.u", "kind": "letter", "bg": "У у", "stressed": "У у", "translit": "u", "translitHe": "וּ", "say": "у", "en": "u — as in “boot”; looks like y", "he": "u — כמו ב„אוּדי“; נראית כמו y", "accept": { "en": ["u"], "he": ["u", "ו"] } },
+    { "id": "u2.h", "kind": "letter", "bg": "Х х", "stressed": "Х х", "translit": "h", "translitHe": "ח", "say": "хъ", "en": "h — rough, as in “loch”; looks like X", "he": "h — כמו ח; נראית כמו X", "accept": { "en": ["h"], "he": ["h", "ח"] } },
+    { "id": "u2.sok", "kind": "word", "bg": "сок", "stressed": "сок", "translit": "sok", "en": "juice", "he": "מיץ", "accept": { "en": ["juice"], "he": ["מיץ"] } },
+    { "id": "u2.nos", "kind": "word", "bg": "нос", "stressed": "нос", "translit": "nos", "en": "nose", "he": "אף", "accept": { "en": ["nose", "a nose"], "he": ["אף"] } },
+    { "id": "u2.sestra", "kind": "word", "bg": "сестра", "stressed": "сестра́", "translit": "sestrá", "en": "sister", "he": "אחות", "accept": { "en": ["sister", "a sister"], "he": ["אחות"] } },
+    { "id": "u2.uho", "kind": "word", "bg": "ухо", "stressed": "у́хо", "translit": "úho", "en": "ear", "he": "אוזן", "accept": { "en": ["ear", "an ear"], "he": ["אוזן"] } },
+    { "id": "u2.b", "kind": "letter", "bg": "Б б", "stressed": "Б б", "translit": "b", "translitHe": "בּ", "say": "бъ", "en": "b — as in “bed”", "he": "b — כמו בּ", "accept": { "en": ["b"], "he": ["b", "ב"] } },
+    { "id": "u2.g", "kind": "letter", "bg": "Г г", "stressed": "Г г", "translit": "g", "translitHe": "ג", "say": "гъ", "en": "g — as in “go”", "he": "g — כמו ג", "accept": { "en": ["g"], "he": ["g", "ג"] } },
+    { "id": "u2.d", "kind": "letter", "bg": "Д д", "stressed": "Д д", "translit": "d", "translitHe": "ד", "say": "дъ", "en": "d — as in “dog”", "he": "d — כמו ד", "accept": { "en": ["d"], "he": ["d", "ד"] } },
+    { "id": "u2.z", "kind": "letter", "bg": "З з", "stressed": "З з", "translit": "z", "translitHe": "ז", "say": "зъ", "en": "z — looks like 3", "he": "z — כמו ז; נראית כמו 3", "accept": { "en": ["z"], "he": ["z", "ז"] } },
+    { "id": "u2.i", "kind": "letter", "bg": "И и", "stressed": "И и", "translit": "i", "translitHe": "אִי", "say": "и", "en": "i — as in “machine”", "he": "i — כמו ב„אילת“", "accept": { "en": ["i"], "he": ["i", "י"] } },
+    { "id": "u2.l", "kind": "letter", "bg": "Л л", "stressed": "Л л", "translit": "l", "translitHe": "ל", "say": "лъ", "en": "l — as in “lamp”", "he": "l — כמו ל", "accept": { "en": ["l"], "he": ["l", "ל"] } },
+    { "id": "u2.p", "kind": "letter", "bg": "П п", "stressed": "П п", "translit": "p", "translitHe": "פּ", "say": "пъ", "en": "p — as in “pen”", "he": "p — כמו פּ", "accept": { "en": ["p"], "he": ["p", "פ"] } },
+    { "id": "u2.dom", "kind": "word", "bg": "дом", "stressed": "дом", "translit": "dom", "en": "home", "he": "בית", "accept": { "en": ["home", "house"], "he": ["בית"] } },
+    { "id": "u2.bira", "kind": "word", "bg": "бира", "stressed": "би́ра", "translit": "bíra", "en": "beer", "he": "בירה", "accept": { "en": ["beer", "a beer"], "he": ["בירה"] } },
+    { "id": "u2.limon", "kind": "word", "bg": "лимон", "stressed": "лимо́н", "translit": "limón", "en": "lemon", "he": "לימון", "accept": { "en": ["lemon", "a lemon"], "he": ["לימון"] } },
+    { "id": "u2.grad", "kind": "word", "bg": "град", "stressed": "град", "translit": "grad", "en": "city / town", "he": "עיר", "accept": { "en": ["city", "town", "a city", "a town"], "he": ["עיר"] } },
+    { "id": "u2.zh", "kind": "letter", "bg": "Ж ж", "stressed": "Ж ж", "translit": "zh", "translitHe": "ז׳", "say": "жъ", "en": "zh — as in “measure”", "he": "zh — כמו ז׳", "accept": { "en": ["zh"], "he": ["zh", "ז׳", "ז'"] } },
+    { "id": "u2.f", "kind": "letter", "bg": "Ф ф", "stressed": "Ф ф", "translit": "f", "translitHe": "פ", "say": "фъ", "en": "f — as in “fun”", "he": "f — כמו פ", "accept": { "en": ["f"], "he": ["f", "פ"] } },
+    { "id": "u2.ts", "kind": "letter", "bg": "Ц ц", "stressed": "Ц ц", "translit": "ts", "translitHe": "צ", "say": "цъ", "en": "ts — as in “cats”", "he": "ts — כמו צ", "accept": { "en": ["ts"], "he": ["ts", "צ"] } },
+    { "id": "u2.ch", "kind": "letter", "bg": "Ч ч", "stressed": "Ч ч", "translit": "ch", "translitHe": "צ׳", "say": "чъ", "en": "ch — as in “chair”", "he": "ch — כמו צ׳", "accept": { "en": ["ch"], "he": ["ch", "צ׳", "צ'"] } },
+    { "id": "u2.sh", "kind": "letter", "bg": "Ш ш", "stressed": "Ш ш", "translit": "sh", "translitHe": "שׁ", "say": "шъ", "en": "sh — as in “shop”", "he": "sh — כמו ש", "accept": { "en": ["sh"], "he": ["sh", "ש"] } },
+    { "id": "u2.sht", "kind": "letter", "bg": "Щ щ", "stressed": "Щ щ", "translit": "sht", "translitHe": "שְׁט", "say": "щъ", "en": "sht — as in “ashtray”", "he": "sht — „שט“", "accept": { "en": ["sht"], "he": ["sht", "שט"] } },
+    { "id": "u2.y", "kind": "letter", "bg": "Й й", "stressed": "Й й", "translit": "y", "translitHe": "י", "say": "ай", "en": "y — as in “boy”", "he": "y — כמו י בסוף „חי“", "accept": { "en": ["y"], "he": ["y", "י"] } },
+    { "id": "u2.chay", "kind": "word", "bg": "чай", "stressed": "чай", "translit": "chay", "en": "tea", "he": "תה", "accept": { "en": ["tea"], "he": ["תה"] } },
+    { "id": "u2.kafe", "kind": "word", "bg": "кафе", "stressed": "кафе́", "translit": "kafé", "en": "coffee / café", "he": "קפה / בית קפה", "accept": { "en": ["coffee", "cafe", "café"], "he": ["קפה", "בית קפה"] } },
+    { "id": "u2.zhena", "kind": "word", "bg": "жена", "stressed": "жена́", "translit": "zhená", "en": "woman / wife", "he": "אישה", "accept": { "en": ["woman", "wife", "a woman"], "he": ["אישה", "אשה"] } },
+    { "id": "u2.oshte", "kind": "word", "bg": "още", "stressed": "о́ще", "translit": "óshte", "en": "more / still", "he": "עוד", "accept": { "en": ["more", "still", "yet"], "he": ["עוד", "עדיין"] } },
+    { "id": "u2.chasha", "kind": "word", "bg": "чаша", "stressed": "ча́ша", "translit": "chásha", "en": "glass / cup", "he": "כוס", "accept": { "en": ["glass", "cup", "a glass", "a cup"], "he": ["כוס"] } },
+    { "id": "u2.er-golyam", "kind": "letter", "bg": "Ъ ъ", "stressed": "Ъ ъ", "translit": "ă", "translitHe": "אְ", "say": "ъ", "en": "ă — short “uh”, as in “but”", "he": "ă — „אֶ“ קצרה ורפויה", "accept": { "en": ["ă", "a", "uh"], "he": ["ă", "a"] } },
+    { "id": "u2.er-malak", "kind": "letter", "bg": "Ь ь", "stressed": "Ь ь", "translit": "y (before о)", "translitHe": "יְ", "say": "ьо", "en": "softens: ьо = yo", "he": "מרכך: ьо = יוֹ", "accept": { "en": ["y", "yo"], "he": ["y", "yo", "יו"] } },
+    { "id": "u2.yu", "kind": "letter", "bg": "Ю ю", "stressed": "Ю ю", "translit": "yu", "translitHe": "יוּ", "say": "ю", "en": "yu — as in “you”", "he": "yu — כמו „יוּ“", "accept": { "en": ["yu"], "he": ["yu", "יו"] } },
+    { "id": "u2.ya", "kind": "letter", "bg": "Я я", "stressed": "Я я", "translit": "ya", "translitHe": "יָה", "say": "я", "en": "ya — as in “yard”", "he": "ya — כמו „יָה“", "accept": { "en": ["ya"], "he": ["ya", "יה"] } },
+    { "id": "u2.pat", "kind": "word", "bg": "път", "stressed": "път", "translit": "păt", "en": "road / way", "he": "דרך / כביש", "accept": { "en": ["road", "way", "path"], "he": ["דרך", "כביש"] } },
+    { "id": "u2.yabalka", "kind": "word", "bg": "ябълка", "stressed": "я́бълка", "translit": "yábălka", "en": "apple", "he": "תפוח", "accept": { "en": ["apple", "an apple"], "he": ["תפוח", "תפוח עץ"] } },
+    { "id": "u2.shofyor", "kind": "word", "bg": "шофьор", "stressed": "шофьо́р", "translit": "shofyór", "en": "driver", "he": "נהג", "accept": { "en": ["driver", "a driver"], "he": ["נהג", "נהגת"] } },
+    { "id": "u2.lyubov", "kind": "word", "bg": "любов", "stressed": "любо́в", "translit": "lyubóv", "en": "love", "he": "אהבה", "accept": { "en": ["love"], "he": ["אהבה"] } },
+    { "id": "u2.balgariya", "kind": "word", "bg": "България", "stressed": "Бълга́рия", "translit": "Bălgáriya", "translitHe": "בְּלְגַרְיָה", "en": "Bulgaria", "he": "בולגריה", "accept": { "en": ["Bulgaria"], "he": ["בולגריה"] } },
+    { "id": "u2.sofiya", "kind": "word", "bg": "София", "stressed": "Со́фия", "translit": "Sófiya", "en": "Sofia", "he": "סופיה", "accept": { "en": ["Sofia"], "he": ["סופיה", "סופיא"] }, "note": { "en": "The capital. Stress the first syllable: Со́фия.", "he": "הבירה. ההטעמה בהברה הראשונה: Со́фия." } },
+    { "id": "u2.hlyab", "kind": "word", "bg": "хляб", "stressed": "хляб", "translit": "hlyab", "en": "bread", "he": "לחם", "accept": { "en": ["bread"], "he": ["לחם"] } },
+    { "id": "u2.voda", "kind": "word", "bg": "вода", "stressed": "вода́", "translit": "vodá", "en": "water", "he": "מים", "accept": { "en": ["water"], "he": ["מים"] } },
+    { "id": "u2.sirene", "kind": "word", "bg": "сирене", "stressed": "си́рене", "translit": "sírene", "en": "white cheese (feta-style)", "he": "גבינה לבנה (בולגרית)", "accept": { "en": ["cheese", "white cheese", "feta"], "he": ["גבינה", "גבינה בולגרית", "גבינה לבנה"] }, "note": { "en": "The famous brined cheese — yes, the “Bulgarian cheese” sold in Israel.", "he": "הגבינה המלוחה המפורסמת — כן, ממש „הגבינה הבולגרית“ שקונים בארץ." } }
+  ]
+}

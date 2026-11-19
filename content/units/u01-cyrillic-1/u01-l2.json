@@ -1,0 +1,21 @@
+{
+  "id": "u01-l2",
+  "title": { "en": "Т, К, Е", "he": "Т, К, Е" },
+  "tips": ["tip.italic-t"],
+  "newItems": ["u1.t", "u1.k", "u1.e", "u1.tatko", "u1.kotka"],
+  "exercises": [
+    { "type": "letterSound", "item": "u1.t", "dir": "letterToSound", "options": ["u1.t", "u1.m", "u1.k"] },
+    { "type": "letterSound", "item": "u1.k", "dir": "letterToSound", "options": ["u1.k", "u1.t", "u1.e"] },
+    { "type": "letterSound", "item": "u1.e", "dir": "letterToSound", "options": ["u1.e", "u1.a", "u1.o"] },
+    { "type": "letterSound", "item": "u1.e", "dir": "soundToLetter", "options": ["u1.e", "u1.a", "u1.o"] },
+    { "type": "match", "items": ["u1.t", "u1.k", "u1.e", "u1.m"] },
+    { "type": "letterSound", "item": "u1.k", "dir": "soundToLetter", "options": ["u1.k", "u1.t", "u1.m"] },
+    { "type": "mc", "item": "u1.tatko", "dir": "toL1" },
+    { "type": "mc", "item": "u1.kotka", "dir": "toL1" },
+    { "type": "listenPick", "item": "u1.kotka", "options": ["u1.kotka", "u1.tatko", "u1.mama"] },
+    { "type": "mc", "item": "u1.tatko", "dir": "toBg" },
+    { "type": "listenType", "item": "u1.kotka" },
+    { "type": "translate", "item": "u1.tatko", "dir": "toL1" },
+    { "type": "speak", "item": "u1.kotka" }
+  ]
+}

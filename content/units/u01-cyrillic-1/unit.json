@@ -1,0 +1,78 @@
+{
+  "id": "u01-cyrillic-1",
+  "number": 1,
+  "alphabet": true,
+  "title": { "en": "Cyrillic I: Familiar faces", "he": "קירילית א׳: פרצופים מוכרים" },
+  "description": {
+    "en": "Six letters that look and sound just like English: А Е К М О Т — and your first real words.",
+    "he": "שש אותיות שנראות ונשמעות בדיוק כמו באנגלית: А Е К М О Т — והמילים האמיתיות הראשונות שלכם."
+  },
+  "lessons": ["u01-l1", "u01-l2", "u01-l3", "u01-l4"],
+  "checkpoint": { "count": 12, "passPercent": 80 },
+  "tips": [
+    {
+      "id": "tip.cyrillic-intro",
+      "title": { "en": "Welcome to Cyrillic", "he": "ברוכים הבאים לקירילית" },
+      "body": {
+        "en": [
+          "Bulgarian is written in the Cyrillic alphabet — 30 letters, and it was born in Bulgaria in the 9th–10th centuries, which Bulgarians are very proud of.",
+          "Good news: Bulgarian spelling is very regular. Each letter almost always has one sound, so once you know the letters you can read any word aloud.",
+          "We start with six letters that look AND sound like their English twins: А Е К М О Т."
+        ],
+        "he": [
+          "בולגרית נכתבת באלפבית הקירילי — 30 אותיות. האלפבית נולד בבולגריה במאות ה־9–10, והבולגרים גאים בזה מאוד.",
+          "שימו לב: כותבים משמאל לימין, כמו באנגלית. והחדשות הטובות — הכתיב הבולגרי עקבי מאוד: כמעט לכל אות יש צליל אחד, ובניגוד לעברית לא חסרות תנועות. ברגע שמכירים את האותיות, אפשר לקרוא בקול כל מילה.",
+          "נתחיל עם שש אותיות שנראות וגם נשמעות כמו התאומות שלהן באנגלית: А Е К М О Т."
+        ]
+      }
+    },
+    {
+      "id": "tip.italic-t",
+      "title": { "en": "When т looks like m", "he": "כש־т נראית כמו m" },
+      "body": {
+        "en": [
+          "In handwriting and in italic type, the lowercase т often looks like an English m. Don't be fooled — it's still a t.",
+          "Some Bulgarian fonts also draw д like g and л like ʌ. In this course we use plain print shapes so you can learn them first."
+        ],
+        "he": [
+          "בכתב יד ובאותיות נטויות, т הקטנה נראית הרבה פעמים כמו m באנגלית. אל תתבלבלו — זו עדיין t.",
+          "יש גם גופנים בולגריים שבהם д נראית כמו g ו־л כמו ʌ. בקורס הזה נשתמש בצורות דפוס פשוטות כדי שתלמדו אותן קודם."
+        ]
+      }
+    },
+    {
+      "id": "tip.stress",
+      "title": { "en": "Stress: the invisible accent", "he": "הטעמה: המבטא הבלתי נראה" },
+      "body": {
+        "en": [
+          "Every Bulgarian word has one stressed syllable, and it can fall anywhere: ма́ма, така́, ка́то.",
+          "Normal Bulgarian text never marks it. In this course we add an accent (до́бър) on new words so you learn the right stress from day one.",
+          "Stress can even change meaning: въ́лна means “wave” but вълна́ means “wool”. Always listen to the audio!"
+        ],
+        "he": [
+          "בכל מילה בבולגרית יש הברה מוטעמת אחת, והיא יכולה ליפול בכל מקום: ма́ма, така́, ка́то.",
+          "בטקסט בולגרי רגיל ההטעמה לא מסומנת לעולם — בדיוק כמו שבעברית בלי ניקוד לא רואים אותה. בקורס נוסיף סימן (до́бър) על מילים חדשות, כדי שתלמדו את ההטעמה הנכונה מהיום הראשון.",
+          "ההטעמה יכולה אפילו לשנות משמעות: въ́лна פירושו „גל“ אבל вълна́ פירושו „צמר“. תמיד תקשיבו להקלטה!"
+        ]
+      },
+      "examples": ["u1.taka", "u1.kato"]
+    }
+  ],
+  "items": [
+    { "id": "u1.a", "kind": "letter", "bg": "А а", "stressed": "А а", "translit": "a", "translitHe": "אַ", "say": "а", "en": "a — as in “father”", "he": "a — כמו ב„אבא“", "accept": { "en": ["a"], "he": ["a", "א"] } },
+    { "id": "u1.o", "kind": "letter", "bg": "О о", "stressed": "О о", "translit": "o", "translitHe": "וֹ", "say": "о", "en": "o — as in “more”, but short", "he": "o — כמו ב„אוטו“", "accept": { "en": ["o"], "he": ["o", "ו"] } },
+    { "id": "u1.m", "kind": "letter", "bg": "М м", "stressed": "М м", "translit": "m", "translitHe": "מ", "say": "мъ", "en": "m — as in “map”", "he": "m — כמו מ׳", "accept": { "en": ["m"], "he": ["m", "מ"] } },
+    { "id": "u1.t", "kind": "letter", "bg": "Т т", "stressed": "Т т", "translit": "t", "translitHe": "ט", "say": "тъ", "en": "t — as in “top”", "he": "t — כמו ט׳", "accept": { "en": ["t"], "he": ["t", "ט", "ת"] } },
+    { "id": "u1.k", "kind": "letter", "bg": "К к", "stressed": "К к", "translit": "k", "translitHe": "ק", "say": "къ", "en": "k — as in “kite”", "he": "k — כמו ק׳", "accept": { "en": ["k"], "he": ["k", "ק", "כ"] } },
+    { "id": "u1.e", "kind": "letter", "bg": "Е е", "stressed": "Е е", "translit": "e", "translitHe": "אֶ", "say": "е", "en": "e — as in “bed”", "he": "e — כמו ב„ארץ“", "accept": { "en": ["e"], "he": ["e", "א"] } },
+    { "id": "u1.mama", "kind": "word", "bg": "мама", "stressed": "ма́ма", "translit": "máma", "en": "mom", "he": "אמא", "accept": { "en": ["mom", "mum", "mother", "mama", "mommy"], "he": ["אמא"] } },
+    { "id": "u1.tatko", "kind": "word", "bg": "татко", "stressed": "та́тко", "translit": "tátko", "en": "dad", "he": "אבא", "accept": { "en": ["dad", "father", "daddy"], "he": ["אבא"] } },
+    { "id": "u1.kotka", "kind": "word", "bg": "котка", "stressed": "ко́тка", "translit": "kótka", "en": "cat", "he": "חתול / חתולה", "accept": { "en": ["cat", "a cat"], "he": ["חתול", "חתולה"] } },
+    { "id": "u1.taka", "kind": "word", "bg": "така", "stressed": "така́", "translit": "taká", "en": "like this / so", "he": "ככה / כך", "accept": { "en": ["like this", "so", "like that", "this way"], "he": ["ככה", "כך"] } },
+    { "id": "u1.kato", "kind": "word", "bg": "като", "stressed": "ка́то", "translit": "káto", "en": "like / as", "he": "כמו", "accept": { "en": ["like", "as"], "he": ["כמו"] } },
+    { "id": "u1.mak", "kind": "word", "bg": "мак", "stressed": "мак", "translit": "mak", "en": "poppy", "he": "פרג", "accept": { "en": ["poppy", "a poppy"], "he": ["פרג"] } },
+    { "id": "u1.atom", "kind": "word", "bg": "атом", "stressed": "а́том", "translit": "átom", "en": "atom", "he": "אטום", "accept": { "en": ["atom", "an atom"], "he": ["אטום"] } },
+    { "id": "u1.kmet", "kind": "word", "bg": "кмет", "stressed": "кмет", "translit": "kmet", "en": "mayor", "he": "ראש עיר", "accept": { "en": ["mayor", "a mayor"], "he": ["ראש עיר", "ראש העיר", "ראש עירייה"] } },
+    { "id": "u1.tema", "kind": "word", "bg": "тема", "stressed": "те́ма", "translit": "téma", "en": "topic", "he": "נושא", "accept": { "en": ["topic", "theme", "subject"], "he": ["נושא"] } }
+  ]
+}

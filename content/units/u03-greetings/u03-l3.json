@@ -1,0 +1,42 @@
+{
+  "id": "u03-l3",
+  "title": { "en": "Yes, no, thank you", "he": "כן, לא, תודה" },
+  "tips": ["tip.headshake"],
+  "newItems": ["u3.da", "u3.ne", "u3.blagodarya", "u3.molya", "u3.izvinete", "u3.ne-blagodarya"],
+  "exercises": [
+    { "type": "mc", "item": "u3.da", "dir": "toL1", "options": ["u3.da", "u3.ne", "u3.molya"] },
+    { "type": "mc", "item": "u3.ne", "dir": "toL1", "options": ["u3.ne", "u3.da", "u3.blagodarya"] },
+    { "type": "listenPick", "item": "u3.blagodarya", "options": ["u3.blagodarya", "u3.molya", "u3.izvinete"] },
+    { "type": "mc", "item": "u3.molya", "dir": "toBg", "options": ["u3.molya", "u3.blagodarya", "u3.da", "u3.zdravey"] },
+    { "type": "match", "items": ["u3.da", "u3.ne", "u3.blagodarya", "u3.molya"] },
+    { "type": "translate", "item": "u3.izvinete", "dir": "toL1" },
+    { "type": "listenType", "item": "u3.da" },
+    {
+      "type": "wordBank", "item": "u3.ne-blagodarya", "dir": "toBg",
+      "distractors": { "bg": ["да", "моля"] }
+    },
+    {
+      "type": "fillBlank", "before": "Не, ", "after": ".", "answer": "благодаря́",
+      "options": ["благодаря́", "мо́ля", "здраве́й"],
+      "translation": { "en": "No, thank you.", "he": "לא, תודה." },
+      "explain": {
+        "en": "„Не, благодаря́“ is the fixed polite way to turn something down. мо́ля would mean “please”.",
+        "he": "„Не, благодаря́“ הוא הסירוב המנומס הקבוע. мо́ля פירושו „בבקשה“."
+      }
+    },
+    { "type": "translate", "item": "u3.blagodarya", "dir": "toBg" },
+    { "type": "listenPick", "item": "u3.izvinete", "options": ["u3.izvinete", "u3.zdraveyte", "u3.dovizhdane"] },
+    {
+      "type": "wordBank", "item": "u3.ne-blagodarya", "dir": "toL1",
+      "distractors": { "en": ["yes", "please"], "he": ["כן", "בבקשה"] }
+    },
+    {
+      "type": "mc", "item": "u3.molya", "dir": "toL1",
+      "explain": {
+        "en": "мо́ля answers благодаря́ too: “thank you” → “you're welcome”.",
+        "he": "мо́ля הוא גם התשובה ל־благодаря́: „תודה“ ← „בבקשה“."
+      }
+    },
+    { "type": "speak", "item": "u3.ne-blagodarya" }
+  ]
+}

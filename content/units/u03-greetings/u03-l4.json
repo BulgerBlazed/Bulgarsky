@@ -1,0 +1,41 @@
+{
+  "id": "u03-l4",
+  "title": { "en": "How are you?", "he": "מה שלומך?" },
+  "tips": ["tip.how-are-you"],
+  "newItems": ["u3.kak-si", "u3.kak-ste", "u3.dobre-sam", "u3.a-ti", "u3.dobre-blagodarya-a-ti"],
+  "exercises": [
+    { "type": "mc", "item": "u3.kak-si", "dir": "toL1" },
+    {
+      "type": "mc", "item": "u3.kak-ste", "dir": "toL1",
+      "explain": { "en": "сте is the polite/plural form; си is for a friend.", "he": "сте היא הצורה המנומסת או של רבים; си היא לחבר." }
+    },
+    { "type": "listenPick", "item": "u3.dobre-sam" },
+    { "type": "wordBank", "item": "u3.dobre-sam", "dir": "toBg", "distractors": { "bg": ["си", "как"] } },
+    { "type": "mc", "item": "u3.a-ti", "dir": "toBg" },
+    { "type": "match", "items": ["u3.kak-si", "u3.dobre-sam", "u3.a-ti", "u3.blagodarya"] },
+    { "type": "wordBank", "item": "u3.dobre-blagodarya-a-ti", "dir": "toBg", "distractors": { "bg": ["моля", "не"] } },
+    { "type": "translate", "item": "u3.kak-si", "dir": "toL1" },
+    {
+      "type": "fillBlank", "before": "Добре́ ", "after": ".", "answer": "съм",
+      "options": ["съм", "си", "сте"],
+      "translation": { "en": "I'm fine.", "he": "אני בסדר." },
+      "explain": {
+        "en": "съм = (I) am. си = (you) are. The verb can't be left out.",
+        "he": "съм = (אני) נמצא/ת. си = (אתה/את). את הפועל אי אפשר להשמיט."
+      }
+    },
+    { "type": "listenType", "item": "u3.a-ti" },
+    { "type": "wordBank", "item": "u3.dobre-blagodarya-a-ti", "dir": "toL1", "distractors": { "en": ["please", "good"], "he": ["בבקשה", "בוקר"] } },
+    { "type": "translate", "item": "u3.kak-si", "dir": "toBg" },
+    {
+      "type": "fillBlank", "before": "Как ", "after": ", господи́н Ива́нов?", "answer": "сте",
+      "options": ["сте", "си"],
+      "translation": { "en": "How are you, Mr Ivanov?", "he": "מה שלומך, אדון איבנוב?" },
+      "explain": {
+        "en": "Mr Ivanov is someone you address politely, so use сте, not си.",
+        "he": "לאדון איבנוב פונים בנימוס, ולכן сте ולא си."
+      }
+    },
+    { "type": "speak", "item": "u3.dobre-blagodarya-a-ti" }
+  ]
+}

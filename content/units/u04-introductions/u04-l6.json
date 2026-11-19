@@ -1,0 +1,43 @@
+{
+  "id": "u04-l6",
+  "title": { "en": "Nice to meet you!", "he": "נעים מאוד!" },
+  "tips": ["tip.gender-ka", "tip.postfixed-article"],
+  "newItems": ["u4.student", "u4.studentka", "u4.i", "u4.az-sam-studentka", "u4.priyatno-az-sam-ivan", "u4.kafeto", "u4.zhenata"],
+  "exercises": [
+    { "type": "mc", "item": "u4.student", "dir": "toL1" },
+    {
+      "type": "mc", "item": "u4.studentka", "dir": "toL1",
+      "explain": { "en": "-ка at the end often marks the feminine form.", "he": "‎-ка‎ בסוף מסמנת לרוב את צורת הנקבה." }
+    },
+    { "type": "listenPick", "item": "u4.i", "options": ["u4.i", "u4.ti", "u4.ot"] },
+    { "type": "match", "items": ["u4.student", "u4.studentka", "u4.i", "u4.priyatno"] },
+    { "type": "wordBank", "item": "u4.az-sam-studentka", "dir": "toBg", "distractors": { "bg": ["студе́нт", "си"] } },
+    {
+      "type": "fillBlank", "before": "Тя е ", "after": ".", "answer": "студе́нтка",
+      "options": ["студе́нтка", "студе́нт"],
+      "translation": { "en": "She is a student.", "he": "היא סטודנטית." },
+      "explain": {
+        "en": "тя (she) needs the feminine form студе́нтка.",
+        "he": "тя (היא) צריכה את צורת הנקבה студе́нтка — כמו „סטודנטית“."
+      }
+    },
+    {
+      "type": "mc", "item": "u4.kafeto", "dir": "toL1",
+      "explain": { "en": "-то at the end is “the”: кафе́ → кафе́то.", "he": "‎-то‎ בסוף היא ה־„ה׳“: кафе́ ← кафе́то." }
+    },
+    { "type": "mc", "item": "u4.zhenata", "dir": "toL1" },
+    {
+      "type": "fillBlank", "before": "Жена́", "after": " е от Со́фия.", "answer": "та",
+      "options": ["та", "то", "те"],
+      "translation": { "en": "The woman is from Sofia.", "he": "האישה מסופיה." },
+      "explain": {
+        "en": "Feminine nouns ending in -а take -та for “the”: жена́ → жена́та.",
+        "he": "שמות נקבה שמסתיימים ב־‎-а‎ מקבלים ‎-та‎ ליידוע: жена́ ← жена́та. ה־„ה׳“ באה בסוף, לא בהתחלה!"
+      }
+    },
+    { "type": "wordBank", "item": "u4.priyatno-az-sam-ivan", "dir": "toBg", "distractors": { "bg": ["си", "се"] } },
+    { "type": "translate", "item": "u4.priyatno-az-sam-ivan", "dir": "toL1" },
+    { "type": "listenType", "item": "u4.i" },
+    { "type": "speak", "item": "u4.priyatno-az-sam-ivan" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "u02-l2",
+  "title": { "en": "Б Г Д З И Л П", "he": "Б Г Д З И Л П" },
+  "tips": ["tip.greek-letters"],
+  "newItems": ["u2.b", "u2.g", "u2.d", "u2.z", "u2.i", "u2.l", "u2.p", "u2.dom", "u2.bira", "u2.limon", "u2.grad"],
+  "exercises": [
+    { "type": "letterSound", "item": "u2.b", "dir": "letterToSound", "options": ["u2.b", "u2.v", "u2.p"] },
+    { "type": "letterSound", "item": "u2.g", "dir": "letterToSound", "options": ["u2.g", "u2.d", "u2.l"] },
+    { "type": "letterSound", "item": "u2.d", "dir": "letterToSound", "options": ["u2.d", "u2.g", "u2.b"] },
+    { "type": "letterSound", "item": "u2.z", "dir": "letterToSound", "options": ["u2.z", "u2.s", "u2.zh"] },
+    {
+      "type": "letterSound", "item": "u2.i", "dir": "letterToSound", "options": ["u2.i", "u2.n", "u2.y"],
+      "explain": { "en": "И is the vowel i, not a backwards N.", "he": "И היא התנועה i, לא N הפוכה." }
+    },
+    { "type": "letterSound", "item": "u2.l", "dir": "letterToSound", "options": ["u2.l", "u2.p", "u2.d"] },
+    { "type": "letterSound", "item": "u2.p", "dir": "letterToSound", "options": ["u2.p", "u2.r", "u2.l"] },
+    { "type": "match", "items": ["u2.b", "u2.g", "u2.d", "u2.z", "u2.p"] },
+    { "type": "letterSound", "item": "u2.i", "dir": "soundToLetter", "options": ["u2.i", "u2.n", "u2.u"] },
+    { "type": "mc", "item": "u2.dom", "dir": "toL1" },
+    { "type": "mc", "item": "u2.bira", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.limon" },
+    { "type": "mc", "item": "u2.grad", "dir": "toBg" },
+    { "type": "listenType", "item": "u2.dom" },
+    { "type": "translate", "item": "u2.bira", "dir": "toL1" }
+  ]
+}

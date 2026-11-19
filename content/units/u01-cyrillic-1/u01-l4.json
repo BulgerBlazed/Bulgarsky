@@ -1,0 +1,19 @@
+{
+  "id": "u01-l4",
+  "title": { "en": "Reading practice", "he": "תרגול קריאה" },
+  "newItems": ["u1.kmet", "u1.tema"],
+  "exercises": [
+    { "type": "mc", "item": "u1.kmet", "dir": "toL1" },
+    { "type": "mc", "item": "u1.tema", "dir": "toL1" },
+    { "type": "listenPick", "item": "u1.kmet", "options": ["u1.kmet", "u1.mak", "u1.tema"] },
+    { "type": "match", "items": ["u1.kmet", "u1.tema", "u1.mama", "u1.tatko", "u1.kotka"] },
+    { "type": "letterSound", "item": "u1.t", "dir": "soundToLetter", "options": ["u1.t", "u1.k", "u1.m"] },
+    { "type": "listenType", "item": "u1.tema" },
+    { "type": "translate", "item": "u1.kmet", "dir": "toBg" },
+    { "type": "mc", "item": "u1.kato", "dir": "toBg" },
+    { "type": "listenType", "item": "u1.tatko" },
+    { "type": "translate", "item": "u1.tema", "dir": "toL1" },
+    { "type": "letterSound", "item": "u1.e", "dir": "letterToSound", "options": ["u1.e", "u1.o", "u1.a"] },
+    { "type": "speak", "item": "u1.kmet" }
+  ]
+}

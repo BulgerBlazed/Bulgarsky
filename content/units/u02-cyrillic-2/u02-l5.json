@@ -1,0 +1,20 @@
+{
+  "id": "u02-l5",
+  "title": { "en": "Read like a local", "he": "לקרוא כמו מקומיים" },
+  "newItems": ["u2.balgariya", "u2.sofiya", "u2.hlyab", "u2.voda", "u2.sirene"],
+  "exercises": [
+    { "type": "mc", "item": "u2.balgariya", "dir": "toL1" },
+    { "type": "mc", "item": "u2.sofiya", "dir": "toL1" },
+    { "type": "listenPick", "item": "u2.hlyab" },
+    { "type": "mc", "item": "u2.voda", "dir": "toBg" },
+    { "type": "mc", "item": "u2.sirene", "dir": "toL1" },
+    { "type": "match", "items": ["u2.hlyab", "u2.voda", "u2.sirene", "u2.chay", "u2.kafe"] },
+    { "type": "listenType", "item": "u2.voda" },
+    { "type": "translate", "item": "u2.hlyab", "dir": "toBg" },
+    { "type": "listenPick", "item": "u2.balgariya", "options": ["u2.balgariya", "u2.sofiya", "u2.yabalka"] },
+    { "type": "translate", "item": "u2.sirene", "dir": "toL1" },
+    { "type": "letterSound", "item": "u2.sht", "dir": "soundToLetter", "options": ["u2.sht", "u2.sh", "u2.ch"] },
+    { "type": "letterSound", "item": "u2.h", "dir": "letterToSound", "options": ["u2.h", "u2.ts", "u2.zh"] },
+    { "type": "speak", "item": "u2.balgariya" }
+  ]
+}

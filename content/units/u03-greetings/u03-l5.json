@@ -1,0 +1,26 @@
+{
+  "id": "u03-l5",
+  "title": { "en": "Sorry, no problem, cheers!", "he": "סליחה, אין בעיה, לחיים!" },
+  "newItems": ["u3.mersi", "u3.sazhalyavam", "u3.nyama-problem", "u3.nazdrave"],
+  "exercises": [
+    { "type": "mc", "item": "u3.mersi", "dir": "toL1" },
+    { "type": "mc", "item": "u3.sazhalyavam", "dir": "toL1" },
+    { "type": "listenPick", "item": "u3.nyama-problem" },
+    { "type": "mc", "item": "u3.nazdrave", "dir": "toBg" },
+    { "type": "match", "items": ["u3.mersi", "u3.sazhalyavam", "u3.nyama-problem", "u3.nazdrave"] },
+    { "type": "translate", "item": "u3.nyama-problem", "dir": "toL1" },
+    {
+      "type": "mc", "item": "u3.sazhalyavam", "dir": "toBg", "options": ["u3.sazhalyavam", "u3.izvinete", "u3.nyama-problem"],
+      "explain": {
+        "en": "съжаля́вам is a real apology (“I'm sorry”); извине́те is “excuse me”.",
+        "he": "съжаля́вам זו התנצלות אמיתית („אני מצטער/ת“); извине́те זה „סליחה“ כדי לפנות למישהו."
+      }
+    },
+    { "type": "listenType", "item": "u3.mersi" },
+    { "type": "wordBank", "item": "u3.nyama-problem", "dir": "toBg", "distractors": { "bg": ["не", "да"] } },
+    { "type": "translate", "item": "u3.nazdrave", "dir": "toBg" },
+    { "type": "listenPick", "item": "u3.izvinete" },
+    { "type": "mc", "item": "u3.dobar-vecher", "dir": "toL1" },
+    { "type": "speak", "item": "u3.nazdrave" }
+  ]
+}

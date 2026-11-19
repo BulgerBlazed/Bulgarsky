@@ -1,0 +1,32 @@
+{
+  "id": "u03-l1",
+  "title": { "en": "Hello!", "he": "שלום!" },
+  "tips": ["tip.formal-informal"],
+  "newItems": ["u3.zdravey", "u3.zdraveyte", "u3.dobro-utro", "u3.dobar-den", "u3.dobar-vecher"],
+  "exercises": [
+    { "type": "mc", "item": "u3.zdravey", "dir": "toL1" },
+    { "type": "mc", "item": "u3.dobro-utro", "dir": "toL1" },
+    { "type": "listenPick", "item": "u3.dobar-den" },
+    { "type": "match", "items": ["u3.zdravey", "u3.dobro-utro", "u3.dobar-den", "u3.dobar-vecher"] },
+    { "type": "mc", "item": "u3.dobar-vecher", "dir": "toBg" },
+    {
+      "type": "mc", "item": "u3.zdraveyte", "dir": "toL1",
+      "explain": { "en": "The -те ending makes a greeting polite or plural.", "he": "הסיומת ‎-те‎ הופכת את הברכה למנומסת או לרבים." }
+    },
+    { "type": "translate", "item": "u3.dobro-utro", "dir": "toL1" },
+    { "type": "listenPick", "item": "u3.zdraveyte", "options": ["u3.zdraveyte", "u3.zdravey", "u3.dobar-den"] },
+    { "type": "wordBank", "item": "u3.dobar-vecher", "dir": "toBg", "distractors": { "bg": ["у́тро", "ден"] } },
+    { "type": "listenType", "item": "u3.zdravey" },
+    { "type": "translate", "item": "u3.dobar-den", "dir": "toBg" },
+    {
+      "type": "fillBlank", "before": "Добро́ ", "after": "!", "answer": "у́тро",
+      "options": ["у́тро", "ден", "ве́чер"],
+      "translation": { "en": "Good morning!", "he": "בוקר טוב!" },
+      "explain": {
+        "en": "у́тро is neuter, so “good” takes the form добро́. With ден and ве́чер it's до́бър.",
+        "he": "у́тро הוא מין סתמי, ולכן „טוב“ מקבל את הצורה добро́. עם ден ו־ве́чер אומרים до́бър."
+      }
+    },
+    { "type": "speak", "item": "u3.dobro-utro" }
+  ]
+}
