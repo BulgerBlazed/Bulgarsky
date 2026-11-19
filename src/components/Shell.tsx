@@ -88,7 +88,7 @@ export function AudioWarning() {
       return false;
     }
   });
-  if (!status || status.available || hidden) return null;
+  if (!status || status.available || status.recordings > 0 || hidden) return null;
   const noApi = status.reason === 'no-speech-api';
   return (
     <div role="alert" className="mx-4 mt-3 flex gap-3 rounded-2xl border-2 border-amber bg-amber-soft p-3 text-sm text-ink">

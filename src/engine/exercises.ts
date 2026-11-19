@@ -160,6 +160,25 @@ export function needsAudio(ex: Exercise): boolean {
   return ex.type === 'listenPick' || ex.type === 'listenType' || (ex.type === 'letterSound' && ex.dir === 'soundToLetter');
 }
 
+/**
+ * The reading version of a listening exercise, used when no Bulgarian audio
+ * can be played on this device. Same item and options, so SRS still counts it.
+ */
+export function readingAlternative(ex: Exercise): Exercise {
+  switch (ex.type) {
+    case 'listenPick':
+      return getItem(ex.item).kind === 'letter'
+        ? { type: 'letterSound', item: ex.item, dir: 'letterToSound', options: ex.options, explain: ex.explain }
+        : { type: 'mc', item: ex.item, dir: 'toL1', options: ex.options, explain: ex.explain };
+    case 'listenType':
+      return { type: 'translate', item: ex.item, dir: 'toBg', explain: ex.explain };
+    case 'letterSound':
+      return ex.dir === 'soundToLetter' ? { ...ex, dir: 'letterToSound' } : ex;
+    default:
+      return ex;
+  }
+}
+
 /** Generates a practice session (10–15 exercises) from item ids. */
 export function generatePractice(itemIds: string[], rng: Rng = Math.random): Exercise[] {
   const items = itemIds.map(findItem).filter((x): x is Item => !!x);

@@ -8,6 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "validate": "tsx scripts/validate-content.ts",
+    "audio:generate": "tsx scripts/generate-audio.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },

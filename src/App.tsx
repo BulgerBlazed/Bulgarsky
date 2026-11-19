@@ -8,6 +8,7 @@ import { navigate, useRoute } from './router';
 import type { Route } from './router';
 import { DIR, useLang, useT } from './i18n/i18n';
 import { BottomNav } from './components/Shell';
+import { AudioNotice } from './components/ui';
 import { SessionScreen } from './screens/SessionScreen';
 import { PathScreen } from './screens/PathScreen';
 import { PracticeScreen } from './screens/PracticeScreen';
@@ -154,6 +155,7 @@ export default function App() {
       <a href="#main" onClick={(e) => { e.preventDefault(); document.getElementById('main')?.focus(); }} className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:start-2 focus:z-50 focus:rounded-xl focus:bg-white focus:p-3">
         Skip to content
       </a>
+      <AudioNotice />
       {screen}
       {WITH_NAV.includes(route.name) && onboarded && <BottomNav active={route.name} />}
     </>

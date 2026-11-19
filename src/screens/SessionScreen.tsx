@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Exercise, Tip } from '../content/schema';
 import { getItem } from '../content/course';
-import { needsAudio, resolve } from '../engine/exercises';
+import { needsAudio, readingAlternative, resolve } from '../engine/exercises';
+import { audio } from '../audio/audio';
 import type { Resolved } from '../engine/exercises';
 import { accuracy, advance, current, isFinished, isOutOfHearts, progress, startSession, submit } from '../engine/session';
 import type { SessionState } from '../engine/session';
@@ -10,7 +11,7 @@ import type { SessionKind, SessionOutcome } from '../state/store';
 import { useLang, useT } from '../i18n/i18n';
 import { Bg, MixedText } from '../components/Bg';
 import { Icon } from '../components/Icon';
-import { Button, ProgressBar, useAudioStatus } from '../components/ui';
+import { Button, ProgressBar, clipFor, useAudioStatus } from '../components/ui';
 import type { Evaluation } from '../exercises/common';
 import { ChoiceExercise } from '../exercises/ChoiceExercise';
 import { TextExercise } from '../exercises/TextExercise';
@@ -22,6 +23,12 @@ import { ResultsView } from './ResultsView';
 
 const HEARTS = 5;
 const MAX_STEP_MS = 90_000;
+
+/** Can the learner actually hear the audio this exercise depends on? */
+function canHear(ex: Exercise): boolean {
+  if (!needsAudio(ex) || !('item' in ex)) return true;
+  return audio.canPlay(clipFor(getItem(ex.item)));
+}
 
 export interface SessionProps {
   kind: SessionKind;
@@ -55,12 +62,16 @@ export function SessionScreen(props: SessionProps) {
   const tickRef = useRef(Date.now());
 
   const entry = current(session);
-  const resolved: Resolved | null = useMemo(
-    () => (entry ? resolve(entry.ex, lang, lessonId) : null),
+  // Recompute when audio becomes (un)available, e.g. voices finish loading.
+  const audioKey = audioStatus ? `${audioStatus.available}-${audioStatus.recordings}` : 'loading';
+  const resolved: Resolved | null = useMemo(() => {
+    if (!entry) return null;
+    // No Bulgarian audio for this item on this device → use the reading version.
+    const ex = !audioStatus || canHear(entry.ex) ? entry.ex : readingAlternative(entry.ex);
+    return resolve(ex, lang, lessonId);
     // re-resolve only when moving to another queue position
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [session.pos, entry?.src, entry?.round, lang],
-  );
+  }, [session.pos, entry?.src, entry?.round, lang, audioKey]);
 
   const showingTips = tipIndex < tips.length;
   const outOfHearts = isOutOfHearts(session) && !locked;
@@ -126,8 +137,8 @@ export function SessionScreen(props: SessionProps) {
 
   // Auto-skip listening exercises after "Can't listen now".
   useEffect(() => {
-    if (skipListening && entry && needsAudio(entry.ex) && !locked) skip();
-  }, [skipListening, entry, locked, skip]);
+    if (skipListening && resolved && needsAudio(resolved.ex) && !locked) skip();
+  }, [skipListening, resolved, locked, skip]);
 
   const onChange = useCallback(
     (ev: Evaluation | null) => {
@@ -204,8 +215,7 @@ export function SessionScreen(props: SessionProps) {
     );
   }
 
-  const listenBlocked = audioStatus && !audioStatus.available;
-  const canSkipAudio = entry && needsAudio(entry.ex);
+  const canSkipAudio = resolved && needsAudio(resolved.ex);
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-2xl flex-col">
@@ -245,7 +255,7 @@ export function SessionScreen(props: SessionProps) {
           <div className="border-t-2 border-line bg-white">
             <div className="mx-auto flex max-w-2xl flex-wrap items-center justify-between gap-3 px-4 py-4">
               {canSkipAudio ? (
-                <Button variant="ghost" onClick={() => setSkipListening(true)} className={listenBlocked ? 'ring-2 ring-amber' : ''}>
+                <Button variant="ghost" onClick={() => setSkipListening(true)}>
                   {t('lesson.cantListen')}
                 </Button>
               ) : (

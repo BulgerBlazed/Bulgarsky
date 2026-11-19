@@ -82,7 +82,7 @@ export function SpeakExercise({ r, locked, onChange }: ExProps<SpeakR>) {
               {t('speak.playback')}
             </Button>
           )}
-          <Button variant="secondary" onClick={() => void playItem(r.item)}>
+          <Button variant="secondary" onClick={() => void playItem(r.item, false, true)}>
             <Icon name="speaker" />
             {t('speak.listenModel')}
           </Button>

@@ -133,22 +133,50 @@ Any exercise can carry `explain: {en, he}`, a one-line explanation shown when th
 **To add a whole unit:** create `content/units/<dir>/unit.json` and its lessons, then set the
 unit's `status` to `"ready"` in `content/course.json`.
 
-## How to swap in recorded audio
+## Audio
 
-Audio goes through the `AudioProvider` interface in `src/audio/audio.ts`. The default `HybridAudio`
-plays a recorded file when the item has one and falls back to Web Speech TTS (`bg-BG`) otherwise.
+Audio goes through the `AudioProvider` interface in `src/audio/audio.ts`. For each item, the default
+`HybridAudio` plays:
 
-1. Put the files in `public/audio/`, for example `public/audio/u3/blagodarya.mp3`.
-2. Reference them from the item: `"audio": "u3/blagodarya.mp3"`.
-3. That's it: the file is played everywhere the item is spoken (prompts, speaker buttons, cheat sheet),
-   and it is cached for offline use by the service worker.
+1. a **recorded file**, if there is one (`item.audio`, or an entry in `public/audio/manifest.json`);
+2. otherwise the browser's **Bulgarian text-to-speech voice** (Web Speech API, `bg-BG`).
 
-To replace TTS entirely (for example with a cloud TTS or an audio sprite), implement `AudioProvider`
-(`init`, `play`, `stop`) and export it as `audio` from `src/audio/audio.ts`.
+If neither exists, nothing is played silently. Speaker buttons turn grey with a "muted" icon, tapping
+one explains why, Settings → Audio shows the fix, and **listening exercises are automatically
+replaced by their reading versions** (listen-and-pick → multiple choice, listen-and-type → write in
+Bulgarian, sound → letter becomes letter → sound).
 
-If the browser has no Bulgarian voice, the app shows a clear warning and the listening exercises
-offer "Can't listen now". Microsoft Edge ships online Bulgarian voices. On Windows you can add one
-under *Settings → Time & language → Speech*.
+### No sound? (most common on Windows + Chrome)
+
+Chrome on Windows has no Bulgarian voice of its own. Any one of these fixes it:
+
+- Open the app in **Microsoft Edge**, which includes free online Bulgarian voices (Kalina, Borislav).
+- Install the Windows voice: *Settings → Time & language → Speech → Add voices → Bulgarian*, then restart the browser.
+- On Android, install Bulgarian in *Google Text-to-speech*.
+- Or ship recordings (below), which work everywhere, even offline.
+
+### Generating recordings for the whole course
+
+`scripts/generate-audio.ts` creates an MP3 for every item with **Azure AI Speech** (the official
+API; the free F0 tier covers 500k characters a month, and this course uses a few thousand).
+It writes `public/audio/<unit>/<item id>.mp3` and `public/audio/manifest.json`, which the app
+picks up automatically.
+
+```powershell
+$env:AZURE_SPEECH_KEY = "<your key>"; $env:AZURE_SPEECH_REGION = "westeurope"
+npm run audio:generate            # only missing files; add -- --force to redo all
+```
+
+Default voice: `bg-BG-KalinaNeural` (set `$env:AZURE_SPEECH_VOICE = "bg-BG-BorislavNeural"` for a male voice).
+Have a native speaker spot-check the stress in the generated audio (see `content/REVIEW.md`).
+
+### Hand-recorded audio
+
+Put a file in `public/audio/` (for example `public/audio/u3/blagodarya.mp3`) and reference it from the
+item: `"audio": "u3/blagodarya.mp3"`. Hand recordings override generated ones. The service worker
+caches all audio for offline use.
+
+To replace TTS entirely, implement `AudioProvider` and export it as `audio` from `src/audio/audio.ts`.
 
 ## How to add a UI language
 
